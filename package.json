@@ -1,0 +1,28 @@
+{
+    "name": "pokemon-api",
+    "version": "1.0.0",
+    "description": "��#\u0000 \u0000p\u0000o\u0000k\u0000e\u0000m\u0000o\u0000n\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Purukitto/pokemon-api.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Purukitto/pokemon-api/issues"
+    },
+    "homepage": "https://github.com/Purukitto/pokemon-api#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "fetch": "^1.1.0",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}
