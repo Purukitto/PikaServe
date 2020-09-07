@@ -1,4 +1,5 @@
 const express = require('express');
+const router = express.Router();
 
 const app = express();
 
@@ -12,15 +13,11 @@ const movesRoutes = require('./api/routes/moves');
 
 app.use(morgan('dev'));
 
-// app.use((req, res, next) => {
-//     res.header('Access-Control-Allow-Origin', '*')
-//     res.header('Access-Control-Allow-Headers', '*')
-//     if (req.method === 'OPTIONS') {
-//         res.header('Access-Control-Allow-Methods', 'PUT,POST,PATCH,DELETE,GET')
-//         return res.status(200).json({})
-//     }
-//     next();
-// })
+router.get('/', (req, res) => {
+    res.status(200).json({
+        message: "Please read the documentaion on https://github.com/Purukitto/pokemon-api for instructions"
+    });
+});
 
 app.use('/pokemon', pokeRoutes)
 app.use('/types', typeRoutes)

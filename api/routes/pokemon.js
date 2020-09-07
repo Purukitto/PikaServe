@@ -5,7 +5,7 @@ const fetchUrl = require("fetch").fetchUrl;
 const pokedex = "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/pokedex.json"
 
 router.get('/', (req, res) => {
-    res.status(500).json({
+    return res.status(200).json({
         message: "Please use all/random or the pokedex ID or name of the pokemon to view all the info about the said pokemon!"
     });
 });
