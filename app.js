@@ -13,15 +13,16 @@ const movesRoutes = require('./api/routes/moves');
 
 app.use(morgan('dev'));
 
-router.get('/', (req, res) => {
+
+app.use('/pokemon', pokeRoutes);
+app.use('/types', typeRoutes);
+app.use('/items', itemRoutes);
+app.use('/moves', movesRoutes);
+
+app.use(router.get('/', (req, res) => {
     res.status(200).json({
         message: "Please read the documentaion on https://github.com/Purukitto/pokemon-api for instructions"
     });
-});
-
-app.use('/pokemon', pokeRoutes)
-app.use('/types', typeRoutes)
-app.use('/items', itemRoutes)
-app.use('/moves', movesRoutes)
+}));
 
 module.exports = app;
