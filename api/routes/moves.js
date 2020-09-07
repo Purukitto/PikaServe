@@ -4,44 +4,61 @@ const fetchUrl = require("fetch").fetchUrl;
 
 const pokedex = "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/moves.json"
 
-router.get('/', (req, res, next) => {
-    fetchUrl(pokedex, function(error, meta, body) {
-        var data = new String();
-        data = JSON.parse(body);
-        return res.status(200).json(data);
-        if (error) {
-            return res.status(500).json(error);
-        }
-    });
-});
+// router.get('/', (req, res, next) => {
+//     fetchUrl(pokedex, function(error, meta, body) {
+//         var data = new String();
+//         data = JSON.parse(body);
+//         return res.status(200).json(data);
+//         if (error) {
+//             return res.status(500).json(error);
+//         }
+//     });
+// });
 
-router.post('/', (req, res, next) => {
+router.get('/', (req, res) => {
     return res.status(500).json({
-        message: "Please enter the move name to view all the info about the said move! To view the complete dataset please use a GET request instead"
+        message: "Please use all/random or the move name to view all the info about the said move! To view the complete dataset please use a GET request instead"
     });
 });
 
-router.post('/:itemName', (req, res, next) => {
+router.get('/:itemName', (req, res) => {
     const itemName = req.params.itemName;
 
     fetchUrl(pokedex, function(error, meta, body) {
-        var data = new String();
-        data = JSON.parse(body);
-        var i;
-        for (i = 0; i < data.length; i++) {
-            if (data[i].ename.toLowerCase().replace(' ', '') == itemName) {
-                return res.status(200).json(data[i]);
+        if (!error) {
+            var data = new String();
+            data = JSON.parse(body);
+            if (itemName == "all") {
+                return res.status(200).json(data);
+            } else if (itemName == "random") {
+                var randID = Math.floor(Math.random() * (data.length));
+                return res.status(200).json(data[randID]);
+            } else {
+                var i;
+                for (i = 0; i < data.length; i++) {
+                    if (data[i].ename.toLowerCase().replace(' ', '') == itemName) {
+                        return res.status(200).json(data[i]);
+                    }
+                }
+                return res.status(200).json({
+                    message: "Please check the name again"
+                });
             }
-        }
-        if (error) {
+        } else {
             return res.status(500).json(error);
         }
     });
 });
 
-router.delete('/', (req, res, next) => {
-    return res.status(200).json({
-        message: "The API endpoint is GET and POST only, read  the documention to check what you can do with it"
+router.post('/', (req, res) => {
+    res.status(200).json({
+        message: "The API endpoint is GET only for now, read  the documention to check what you can do with it"
+    })
+});
+
+router.delete('/', (req, res) => {
+    res.status(200).json({
+        message: "The API endpoint is GET only for now, read  the documention to check what you can do with it"
     })
 });
 
