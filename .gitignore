@@ -1,3 +1,7 @@
+#misc
+.vscode/
+.deployment
+
 # Logs
 logs
 *.log
