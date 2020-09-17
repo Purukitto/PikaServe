@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const app = express();
-
+const bodyParser = require('body-parser');
 const morgan = require('morgan');
 
 const pokeRoutes = require('./api/routes/pokemon');
@@ -13,6 +13,10 @@ const movesRoutes = require('./api/routes/moves');
 
 app.use(morgan('dev'));
 
+app.use(bodyParser.urlencoded({
+    extended: false
+}))
+app.use(bodyParser.json())
 
 app.use('/pokemon', pokeRoutes);
 app.use('/types', typeRoutes);
