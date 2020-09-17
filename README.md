@@ -5,7 +5,7 @@
 
 
 Pokemon-api is an API endpoint to query data in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
-It can be curentely queried on https://pokemon-api.azurewebsites.net/
+It can be curentely queried at https://pokemon-api.azurewebsites.net/
 
 
 ## `CURRENTLY UNDER DEVELOPMENT`
@@ -15,7 +15,6 @@ It can be curentely queried on https://pokemon-api.azurewebsites.net/
 # QUERIES
 
 ## GET
-``The API only has GET queries as of now, the POST queries and frontend module is under development``
 
 - ### /pokemon
 
@@ -87,3 +86,148 @@ Possible queries:
 - #### /types/{name}
   Searches the database and retrives type named {name} <br>
   ``Sample Request URL : https://pokemon-api.azurewebsites.net/types/fairy``
+  
+  <br>
+  
+  ## POST
+  `Send JSON objects with input parameter`
+  
+- ### /pokemon
+``POST Request URL : https://pokemon-api.azurewebsites.net/pokemon/``
+
+Possible queries:
+- #### all
+  Retrieves the complete pokemon database <br>
+  ```
+  Sample POST Request Body :
+  {
+     "input":"all"
+  }
+  ```
+  
+- #### random
+  Retrives a random pokemon from the database <br>
+   ```
+  Sample POST Request Body :
+  {
+     "input":"random"
+  }
+  ```
+  
+- #### {name}
+  Searches the database and retrives pokemon named {name} <br>
+   ```
+  Sample POST Request Body :
+  {
+     "input":"pikachu"
+  }
+  ```
+
+- #### {pokedexID}
+  Searches the database and retrives pokemon numbered {pokedexID} <br>
+  ```
+  Sample POST Request Body :
+  {
+     "input":"500"
+  }
+  ```
+
+<br>
+
+
+- ### /moves
+``POST Request URL : https://pokemon-api.azurewebsites.net/moves/``
+
+Possible queries:
+- #### all
+  Retrieves the complete moves database <br>
+  ```
+  Sample POST Request Body :
+  {
+     "input":"all"
+  }
+  ```
+  
+- #### random
+  Retrives a random move from the database <br>
+  ```
+  Sample POST Request Body :
+  {
+     "input":"random"
+  }
+  ```
+  
+- #### {name}
+  Searches the database and retrives move named {name} <br>
+  ```
+  Sample POST Request Body :
+  {
+     "input":"aerial ace"
+  }
+  ```
+
+  <br>
+  
+- ### /items
+``POST Request URL : https://pokemon-api.azurewebsites.net/items/``
+
+Possible queries:
+- #### all
+  Retrieves the complete items database <br>
+  ```
+  Sample POST Request Body :
+  {
+     "input":"all"
+  }
+  ```
+  
+- #### random
+  Retrives a random item from the database <br>
+  ```
+  Sample POST Request Body :
+  {
+     "input":"random"
+  }
+  ```
+  
+- #### {name}
+  Searches the database and retrives item named {name} <br>
+  ```
+  Sample POST Request Body :
+  {
+     "input":"master ball"
+  }
+  ```
+
+<br>
+
+- ### /types
+``POST Request URL : https://pokemon-api.azurewebsites.net/types/``
+
+Possible queries:
+- #### all
+  Retrieves the complete types database <br>
+  ```
+  Sample POST Request Body :
+  {
+     "input":"all"
+  }
+  ```
+  
+- #### random
+  Retrives a random type from the database <br>
+  ```
+  Sample POST Request Body :
+  {
+     "input":"all"
+  }
+  ```
+  
+- #### {name}
+  Searches the database and retrives type named {name} <br>
+  ```
+  Sample POST Request Body :
+  {
+     "input":"all"
+  }
+  ```
