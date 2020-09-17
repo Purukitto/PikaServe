@@ -5,7 +5,7 @@
 
 
 Pokemon-api is an API endpoint to query data in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
-It can be curentely queried at https://pokemon-api.azurewebsites.net/
+It can be currently queried at https://pokemon-api.azurewebsites.net/
 
 
 ## `CURRENTLY UNDER DEVELOPMENT`
