@@ -29,4 +29,10 @@ app.use(router.get('/', (req, res) => {
     });
 }));
 
+app.use(router.post('/', (req, res) => {
+    res.status(200).json({
+        message: "Please read the documentaion on https://github.com/Purukitto/pokemon-api for instructions"
+    });
+}));
+
 module.exports = app;

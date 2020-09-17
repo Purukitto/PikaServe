@@ -23,7 +23,7 @@ router.get('/:pokemonName', (req, res) => {
                 return res.status(200).json(data[randID]);
             } else {
                 if (parseInt(pokeInp)) {
-                    res.status(200).json(data[pokeInp - 1]);
+                    return res.status(200).json(data[pokeInp - 1]);
                 } else {
                     var i;
                     for (i = 0; i < data.length; i++) {
@@ -37,13 +37,12 @@ router.get('/:pokemonName', (req, res) => {
                 }
             }
         } else {
-            res.status(500).json(error);
+            return res.status(500).json(error);
         }
     });
 });
 
 router.post('/', (req, res) => {
-    console.log('Got body:', req.body);
     const poke = {
         input: req.body.input
     }
@@ -57,7 +56,7 @@ router.post('/', (req, res) => {
                 var randID = Math.floor(Math.random() * (data.length));
                 return res.status(200).json(data[randID]);
             } else if (parseInt(poke.input)) {
-                res.status(200).json(data[poke.input - 1]);
+                return res.status(200).json(data[poke.input - 1]);
             } else {
                 var i;
                 for (i = 0; i < data.length; i++) {
@@ -70,13 +69,13 @@ router.post('/', (req, res) => {
                 });
             }
         } else {
-            res.status(500).json(error);
+            return res.status(500).json(error);
         }
     });
 });
 
 router.delete('/', (req, res) => {
-    res.status(200).json({
+    return res.status(200).json({
         message: "The API endpoint is read only, read  the documention to check what you can do with it"
     })
 });

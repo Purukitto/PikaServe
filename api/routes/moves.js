@@ -65,13 +65,13 @@ router.post('/', (req, res) => {
                 });
             }
         } else {
-            res.status(500).json(error);
+            return res.status(500).json(error);
         }
     });
 });
 
 router.delete('/', (req, res) => {
-    res.status(200).json({
+    return res.status(200).json({
         message: "The API endpoint is read only, read  the documention to check what you can do with it"
     })
 });
