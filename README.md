@@ -1,6 +1,6 @@
 ﻿# pokemon-api
  
-[![Development Stage](https://img.shields.io/badge/Development-Beta_v1.1-blue)]()
+[![Development Stage](https://img.shields.io/badge/Development-Beta_v2.1-blue)]()
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d02ef50bf3f444bea0c886ac70a322d7)](https://app.codacy.com/manual/purukitto/pokemon-api?utm_source=github.com&utm_medium=referral&utm_content=Purukitto/pokemon-api&utm_campaign=Badge_Grade_Dashboard)
 
 
