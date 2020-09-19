@@ -1,6 +1,8 @@
+<br>
+
 <p align="center">
   <a href="https://github.com/Purukitto/pokemon-api/">
-    <img alt="pokemon-API" src="logo.png" width="700">
+    <img alt="pokemon-API" src="logo.png" width="500">
   </a>
 </p>
 
@@ -13,7 +15,7 @@
 
 Pokemon-api is an API endpoint to query data in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
 It can be currently queried at https://pokemon-api.azurewebsites.net/
-
+<!-- if link  changes update on https://github.com/tobiasbueschel/awesome-pokemon -->
 
 ## `CURRENTLY UNDER DEVELOPMENT`
 - [X] POST queries
