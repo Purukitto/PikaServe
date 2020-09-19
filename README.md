@@ -19,6 +19,7 @@ It can be currently queried at https://pokemon-api.azurewebsites.net/
 
 ## `CURRENTLY UNDER DEVELOPMENT`
 - [X] POST queries
+- [ ] Move to custom DNS
 - [ ] **[WIP]** Beta Wiki
 - [ ] FrontEnd Panel
 - [ ] Develop interactions with the different queries
