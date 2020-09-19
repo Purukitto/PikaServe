@@ -16,6 +16,7 @@ It can be currently queried at https://pokemon-api.azurewebsites.net/
 - [ ] **[WIP]** Beta Wiki
 - [ ] FrontEnd Panel
 - [ ] Develop interactions with the different queries
+- [ ] Update [database](https://github.com/Purukitto/pokemon-data.json) to include Gen 8 (Looking for contributors)
 
 <br>
 
