@@ -14,12 +14,12 @@
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z027IJX)
 
 Pokemon-api is an API endpoint to query data in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
-It can be currently queried at https://pokemon-api.azurewebsites.net/
+It can be currently queried at http://app.pokemon-api.xyz
 <!-- if link  changes update on https://github.com/tobiasbueschel/awesome-pokemon -->
 
 ## `CURRENTLY UNDER DEVELOPMENT`
 - [X] POST queries
-- [ ] Move to custom DNS
+- [X] Change host and move to custom DNS
 - [ ] **[WIP]** Beta Wiki
 - [ ] FrontEnd Panel
 - [ ] Develop interactions with the different queries
@@ -36,19 +36,19 @@ It can be currently queried at https://pokemon-api.azurewebsites.net/
 Possible queries:
 - #### /pokemon/all
   Retrieves the complete pokemon database <br>
-  ``Sample Request URL : https://pokemon-api.azurewebsites.net/pokemon/all``
+  ``Sample Request URL : http://app.pokemon-api.xyz/pokemon/all``
   
 - #### /pokemon/random
   Retrives a random pokemon from the database <br>
-  ``Sample Request URL : https://pokemon-api.azurewebsites.net/pokemon/random``
+  ``Sample Request URL : http://app.pokemon-api.xyz/pokemon/random``
   
 - #### /pokemon/{name}
   Searches the database and retrives pokemon named {name} <br>
-  ``Sample Request URL : https://pokemon-api.azurewebsites.net/pokemon/pikachu``
+  ``Sample Request URL : http://app.pokemon-api.xyz/pokemon/pikachu``
 
 - #### /pokemon/{pokedexID}
   Searches the database and retrives pokemon numbered {pokedexID} <br>
-  ``Sample Request URL : https://pokemon-api.azurewebsites.net/pokemon/500``
+  ``Sample Request URL : http://app.pokemon-api.xyz/pokemon/500``
 
 <br>
 
@@ -58,15 +58,15 @@ Possible queries:
 Possible queries:
 - #### /moves/all
   Retrieves the complete moves database <br>
-  ``Sample Request URL : https://pokemon-api.azurewebsites.net/moves/all``
+  ``Sample Request URL : http://app.pokemon-api.xyz/moves/all``
   
 - #### /moves/random
   Retrives a random move from the database <br>
-  ``Sample Request URL : https://pokemon-api.azurewebsites.net/moves/random``
+  ``Sample Request URL : http://app.pokemon-api.xyz/moves/random``
   
 - #### /moves/{name}
   Searches the database and retrives move named {name} <br>
-  ``Sample Request URL : https://pokemon-api.azurewebsites.net/moves/aerialace``
+  ``Sample Request URL : http://app.pokemon-api.xyz/moves/aerialace``
 
   <br>
   
@@ -75,15 +75,15 @@ Possible queries:
 Possible queries:
 - #### /items/all
   Retrieves the complete items database <br>
-  ``Sample Request URL : https://pokemon-api.azurewebsites.net/items/all``
+  ``Sample Request URL : http://app.pokemon-api.xyz/items/all``
   
 - #### /items/random
   Retrives a random item from the database <br>
-  ``Sample Request URL : https://pokemon-api.azurewebsites.net/items/random``
+  ``Sample Request URL : http://app.pokemon-api.xyz/items/random``
   
 - #### /items/{name}
   Searches the database and retrives item named {name} <br>
-  ``Sample Request URL : https://pokemon-api.azurewebsites.net/items/masterball``
+  ``Sample Request URL : http://app.pokemon-api.xyz/items/masterball``
 
 <br>
 
@@ -92,15 +92,15 @@ Possible queries:
 Possible queries:
 - #### /types/all
   Retrieves the complete types database <br>
-  ``Sample Request URL : https://pokemon-api.azurewebsites.net/types/all``
+  ``Sample Request URL : http://app.pokemon-api.xyz/types/all``
   
 - #### /types/random
   Retrives a random type from the database <br>
-  ``Sample Request URL : https://pokemon-api.azurewebsites.net/types/random``
+  ``Sample Request URL : http://app.pokemon-api.xyz/types/random``
   
 - #### /types/{name}
   Searches the database and retrives type named {name} <br>
-  ``Sample Request URL : https://pokemon-api.azurewebsites.net/types/fairy``
+  ``Sample Request URL : http://app.pokemon-api.xyz/types/fairy``
   
   <br>
   
@@ -108,7 +108,7 @@ Possible queries:
   `Send JSON objects with input parameter`
   
 - ### /pokemon
-``POST Request URL : https://pokemon-api.azurewebsites.net/pokemon/``
+``POST Request URL : http://app.pokemon-api.xyz/pokemon/``
 
 Possible queries:
 - #### all
@@ -151,7 +151,7 @@ Possible queries:
 
 
 - ### /moves
-``POST Request URL : https://pokemon-api.azurewebsites.net/moves/``
+``POST Request URL : http://app.pokemon-api.xyz/moves/``
 
 Possible queries:
 - #### all
@@ -184,7 +184,7 @@ Possible queries:
   <br>
   
 - ### /items
-``POST Request URL : https://pokemon-api.azurewebsites.net/items/``
+``POST Request URL :http://app.pokemon-api.xyz/items/``
 
 Possible queries:
 - #### all
@@ -217,7 +217,7 @@ Possible queries:
 <br>
 
 - ### /types
-``POST Request URL : https://pokemon-api.azurewebsites.net/types/``
+``POST Request URL : http://app.pokemon-api.xyz/types/``
 
 Possible queries:
 - #### all
