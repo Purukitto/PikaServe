@@ -21,7 +21,7 @@ function putValue(input) {
 }
 
 function fetchAPI(input) {
-    fetch('http://app.pokemon-api.xyz/' + input)
+    fetch('https://app.pokemon-api.xyz/' + input)
         .then(response => response.json())
         .then(data => {
             var div = document.getElementById("pokeData");
