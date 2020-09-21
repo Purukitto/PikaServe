@@ -18,6 +18,17 @@ app.use(bodyParser.urlencoded({
 }))
 app.use(bodyParser.json())
 
+//CORS error removal
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*')
+    res.header('Access-Control-Allow-Headers', '*')
+    if (req.method === 'OPTIONS') {
+        res.header('Access-Control-Allow-Methods', 'PUT,POST,PATCH,DELETE,GET')
+        return res.status(200).json({})
+    }
+    next();
+})
+
 app.use('/pokemon', pokeRoutes);
 app.use('/types', typeRoutes);
 app.use('/items', itemRoutes);

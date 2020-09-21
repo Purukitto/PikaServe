@@ -1,6 +1,7 @@
 #misc
-.vscode/
+.vscode
 .deployment
+webportal/
 
 # Logs
 logs
