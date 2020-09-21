@@ -1,7 +1,7 @@
 #misc
 .vscode
 .deployment
-webportal/template.html
+docs/template.html
 
 # Logs
 logs
