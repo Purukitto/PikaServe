@@ -12,7 +12,7 @@
 [![License](https://img.shields.io/github/license/Purukitto/pokemon-api)](https://github.com/Purukitto/pokemon-api/blob/master/LICENSE.md)
 
 Pokemon-api is a simple to use, no bull-sh*t API endpoint to query data available in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
-It can be currently queried at http://app.pokemon-api.xyz
+It can be currently queried at https://app.pokemon-api.xyz
 
 ## Usage
 Please visit the [Wiki](https://purukitto.github.io/pokemon-api/) for more information
