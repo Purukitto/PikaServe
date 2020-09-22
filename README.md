@@ -31,7 +31,7 @@ There are hundred's of pokemon APIs already, with 20,000 ways to use and god kno
 
 <!-- if link  changes update on https://github.com/tobiasbueschel/awesome-pokemon -->
 
-## `CURRENTLY UNDER DEVELOPMENT`
+### `Active Development Goals`
 - [X] POST queries
 - [X] Change host and move to custom DNS (v1)
 - [X] Wiki
