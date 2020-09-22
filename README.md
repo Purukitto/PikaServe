@@ -23,7 +23,7 @@
 Pokemon-api is a simple to use, no bull-sh*t API endpoint to query data available in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
 It can be currently queried at https://app.pokemon-api.xyz
 
-## Usage
+## API Usage
 Please visit the [Wiki](https://purukitto.github.io/pokemon-api/) for more information
 
 ## Why?
@@ -41,6 +41,26 @@ There are hundred's of pokemon APIs already, with 20,000 ways to use and god kno
 - [ ] Develop interactions with the different queries
 - [ ] Update [database](https://github.com/Purukitto/pokemon-data.json) to include Gen 8 (Looking for contributors)
 
+## Self host
+Why to self host?
+- You might want to add or modify some endpoints for your specific use case.
+- Biggest advantage will be low latency and you can freely remove the rate limits
+
+### Steps for self hosting
+- Download the release .rar from this [link](https://drive.google.com/drive/folders/1uoYEMtLcPNEq_rI7MsCsSzIpu9vO405F?usp=sharing)
+##### Download the lastest release or any other specefic release (upwards of v1.1.2). See [Version History](/versionHistory.md) for changes.
+- Export the .rar you downloaded using your software of choice
+- Open the terminal in the exported folder or navigate to the folder in the terminal or IDE of your choice
+- Use `npm install` and wait for the dependencies to install
+- Then do `npm start` and wait for the script to run
+- Done, now you can query the code on http://localhost:3000/ (http://localhost:3000/pokemon/random)
+
+#### To remove/edit rate limiting on self hosted release
+- Open `app.js` with the editor of your choice
+- Find the `// RATE LIMITING START` section
+- Edit the values to your requirement
+- To  completely remove the rate limiting, simply comment out code section between `// RATE LIMITING START` and `// RATE LIMITING END`
+
 ## Contributing
 ### How to Contribute?
 * Make sure that your changes do not conflict with the core files (changing file directories will require a change in all called paths)
@@ -54,8 +74,8 @@ There are hundred's of pokemon APIs already, with 20,000 ways to use and god kno
 
 [GNU GPLv3](https://github.com/Purukitto/pokemon-api/blob/master/LICENSE) © Pulkit Sambhavi Singh (https://github.com/Purukitto/)
 
-#### This project was made for educational purposes, do consider supporting development by contributing or donating if you like the project
+##### This project was made for educational purposes, do consider supporting development by contributing or donating if you like the project
 
 <hr>
 
-#### Pokémon and Pokémon character names are trademarks of Nintendo and The Pokémon Company.
+##### Pokémon and Pokémon character names are trademarks of Nintendo and The Pokémon Company.
