@@ -4,8 +4,7 @@
     "description": "��#\u0000 \u0000p\u0000o\u0000k\u0000e\u0000m\u0000o\u0000n\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "nodemon server.js",
+        "test": "nodemon server.js",
         "start": "node server.js"
     },
     "repository": {
@@ -21,6 +20,7 @@
     "dependencies": {
         "body-parser": "^1.19.0",
         "express": "^4.17.1",
+        "express-rate-limit": "^5.1.3",
         "fetch": "^1.1.0",
         "morgan": "^1.10.0"
     },

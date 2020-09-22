@@ -54,7 +54,7 @@
                     <div class="col-md-12">
                         <div class="big-title text-center">
                             <h1>Pokemon-API Wiki</h1>
-                            <p class="lead">pokemon-api v1.1.1</p>
+                            <p class="lead">pokemon-api v1.2.1</p>
                         </div>
                         <!-- end title -->
                     </div>
@@ -106,7 +106,7 @@
                                         <div class="intro1">
                                             <ul>
                                                 <li><strong>Project Name : </strong>pokemon-api</li>
-                                                <li><strong>Project Version : </strong>v1.1.1</li>
+                                                <li><strong>Project Version : </strong>v1.2.1</li>
                                                 <li><strong>Project URL : </strong> <a href="https://github.com/Purukitto/pokemon-api" target="_blank">https://github.com/Purukitto/pokemon-api</a></li>
                                                 <li><strong>Query Endpoint : </strong> <a href="https://app.pokemon-api.xyz/" target="_blank">app.pokemon-api.xyz/</a></li>
                                                 <li><strong>Database URL : </strong> <a href="https://github.com/Purukitto/pokemon-data.json" target="_blank">https://github.com/Purukitto/pokemon-data.json</a></li>
@@ -138,8 +138,7 @@
                                             <h4>Notice</h4>
                                             <p>This is a <b>consumption-only API</b> — only.
                                                 </br>
-                                                No authentication is required to access this API, and all resources are fully open and available. Since the API is at an early stage, rate limiting has not been enforced at all, but we still encourage you to limit the frequency of requests to limit load
-                                                on our hosting, which might force us to enforce rate limiting.
+                                                No authentication is required to access this API, and all resources are open and available. <b>The API is rate limited to 2500 calls</b> as of now.
                                             </p>
                                             <ul class="bullet-list">
                                                 <li>Locally cache resources whenever you request them</li>
@@ -444,6 +443,12 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <pre class="brush: html">
+
+                                        -----------------------------------------------------------------------------------------
+                                        Version 1.2.1 - Sep 22th, 2020
+                                        -----------------------------------------------------------------------------------------
+                                        - Implemented rate limits (2500 API calls per hour)
+
                                         -----------------------------------------------------------------------------------------
                                         Version 1.1.1 - Sep 21th, 2020
                                         -----------------------------------------------------------------------------------------
@@ -455,27 +460,15 @@
                                         Version 1.0.1 - Sep 21th, 2020
                                         -----------------------------------------------------------------------------------------
                                         - Fixed CORS erros
-
-
-                                        -----------------------------------------------------------------------------------------
-                                        Version 1.0.0 - Sep 19th, 2020
-                                        -----------------------------------------------------------------------------------------
-                                        - Added custom DNS server
-                                        - Made query handling easier
-                                        - Moved to Heroku Free tier
-
-
-                                        -----------------------------------------------------------------------------------------
-                                        Version Beta 2.0.1 - Sep 15th, 2020
-                                        -----------------------------------------------------------------------------------------
-                                        - Added POST queries
-                                        - Better error handling/logging
-
                                 </pre>
                             </div>
                         </div>
                         <!-- end row -->
-
+                        <div class="intro3 clearfix">
+                            <p>
+                                <a href="https://github.com/Purukitto/"><i class="fa fa-github"></i></a>Check the file <a>versionHistory.md</a> in the Github repository for the full version history
+                            </p>
+                        </div>
                     </section>
                     <!-- end section -->
 

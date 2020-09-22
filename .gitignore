@@ -1,7 +1,7 @@
 #misc
 .vscode
 .deployment
-docs/template.html
+docs/temp.html
 
 # Logs
 logs
