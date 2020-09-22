@@ -15,7 +15,7 @@
 -->
 
 <p align="center">
-  <a href="https://github.com/Purukitto/pokemon-api/">
+  <a href="https://purukitto.github.io/pokemon-api/">
     <img alt="pokemon-API" src="wiki.png" width="728">
   </a>
 </p>
@@ -25,6 +25,9 @@ It can be currently queried at https://app.pokemon-api.xyz
 
 ## Usage
 Please visit the [Wiki](https://purukitto.github.io/pokemon-api/) for more information
+
+## Why?
+There are hundred's of pokemon APIs already, with 20,000 ways to use and god knows how much incomprehensible data. This projects aim is to be as simple and straightforward to use as possible. Simple enough to be used, forked, edited and self-hosted as per personal preferences.
 
 <!-- if link  changes update on https://github.com/tobiasbueschel/awesome-pokemon -->
 
@@ -45,6 +48,14 @@ Please visit the [Wiki](https://purukitto.github.io/pokemon-api/) for more infor
 * Refactoring contributions are welcome, explicitly mention "[Refactor]" in your pull request
 * Give a few days to review PRs, code reviews are welcome 
 
-#### Pokémon and Pokémon character names are trademarks of Nintendo and The Pokémon Company.
+<hr>
+
+## License
+
+[GNU GPLv3](https://github.com/Purukitto/pokemon-api/blob/master/LICENSE) © Pulkit Sambhavi Singh (https://github.com/Purukitto/)
+
 #### This project was made for educational purposes, do consider supporting development by contributing or donating if you like the project
 
+<hr>
+
+#### Pokémon and Pokémon character names are trademarks of Nintendo and The Pokémon Company.
