@@ -54,7 +54,7 @@
                     <div class="col-md-12">
                         <div class="big-title text-center">
                             <h1>Pokemon-API Wiki</h1>
-                            <p class="lead">pokemon-api v1.2.1</p>
+                            <p class="lead">pokemon-api v1.2.2</p>
                         </div>
                         <!-- end title -->
                     </div>
@@ -79,17 +79,9 @@
                                     <li><a href="#line3_4">Types</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#line4">POST Methods</a>
-                                <ul class="nav">
-                                    <li><a href="#line4_1">Pokemon</a></li>
-                                    <li><a href="#line4_2">Moves</a></li>
-                                    <li><a href="#line4_3">Items</a></li>
-                                    <li><a href="#line4_4">Types</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#line5">Usage Examples</a></li>
-                            <li><a href="#line6">Changelog</a></li>
-                            <li><a href="#line7">Copyright and license</a></li>
+                            <li><a href="#line4">Usage Examples</a></li>
+                            <li><a href="#line5">Changelog</a></li>
+                            <li><a href="#line6">Copyright and license</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -101,12 +93,11 @@
                                     <hr>
                                 </h2> -->
                                 <div class="row">
-
                                     <div class="col-md-12 full">
                                         <div class="intro1">
                                             <ul>
                                                 <li><strong>Project Name : </strong>pokemon-api</li>
-                                                <li><strong>Project Version : </strong>v1.2.1</li>
+                                                <li><strong>Project Version : </strong>v1.2.2</li>
                                                 <li><strong>Project URL : </strong> <a href="https://github.com/Purukitto/pokemon-api" target="_blank">https://github.com/Purukitto/pokemon-api</a></li>
                                                 <li><strong>Query Endpoint : </strong> <a href="https://app.pokemon-api.xyz/" target="_blank">app.pokemon-api.xyz/</a></li>
                                                 <li><strong>Database URL : </strong> <a href="https://github.com/Purukitto/pokemon-data.json" target="_blank">https://github.com/Purukitto/pokemon-data.json</a></li>
@@ -115,18 +106,14 @@
                                                 <li><strong>License : </strong> <a href="#line11" target="_blank">GNU GPLv3  License</a></li>
                                             </ul>
                                         </div>
-
                                         <hr>
                                         <div>
                                             <p>This documentation is to help you use the front-end portal, as well as the query endpoint. Please go through the specefic sections carefully to avoid any error. You can always skip to sections from the navigation
                                                 sidebar present on the left.
-
                                                 </br>
                                                 </br>
-
                                                 <b>Quick tip:</b> Use your browser's "find on page" feature to search for a specific resource ( <kbd>Ctrl+F</kbd> or <kbd>Cmd+F</kbd> )
                                             </p>
-
                                             <div class="intro2 clearfix">
                                                 <p><a href="https://github.com/Purukitto/"><i class="fa fa-github"></i></a>This project was made for educational purposes. It was recently moved to a payed hosting in the favour of server over a secure connection(https)
                                                     for modern broswers, which also means faster queries. Please consider <a href="https://ko-fi.com/purukitto" target="_blank"> supporting me by buying me a coffee</a> if you would like to support development
@@ -152,7 +139,6 @@
                             </div>
                         </div>
                     </section>
-
                     <section id="line1" class="section">
                         <div class="row">
                             <div class="col-md-12 left-align">
@@ -204,7 +190,6 @@
                         <hr>
                     </section>
                     <!-- end section -->
-
                     <section id="line3" class="section">
                         <div class="row">
                             <div class="col-md-12 left-align">
@@ -298,125 +283,6 @@
                     <section id="line4" class="section">
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">POST Methods<a href="#top">#back to top</a>
-                                    <hr>
-                                </h2>
-                            </div>
-                        </div>
-                        <section id="line4_1" class="section">
-                            <h4 class="dark-text"><code>/pokemon</code></h4>
-                            <h4>Request URL : <a href="https://app.pokemon-api.xyz/pokemon/" target="blank_">https://app.pokemon-api.xyz/pokemon/</a></h4>
-                            <h4 class="mini-title"><code>all</code></h4>
-                            <p>Retrieves the complete pokemon database.<br></p>
-                            <b>Request Body (Raw JSON):</b>
-                            <pre class="sample"><div class="postall"></div></pre>
-                            <b>Output sample:</b>
-                            <pre class="sample"><div class="getpokemonall"></div></pre>
-
-                            <h4 class="mini-title"><code>random</code></h4>
-                            <p>Retrives a random pokemon from the database.<br></p>
-                            <b>Request Body (Raw JSON):</b>
-                            <pre class="sample"><div class="postrand"></div></pre>
-                            <b>Output sample:</b>
-                            <pre class="sample"><div class="getpokemonrand"></div></pre>
-
-                            <h4 class="mini-title"><code>{name}</code></h4>
-                            <p>Searches the database and retrives pokemon named {name}.<br></p>
-                            <b>Request Body (Raw JSON):</b>
-                            <pre class="sample"><div class="postpokemonname"></div></pre>
-                            <b>Output sample:</b>
-                            <pre class="sample"><div class="getpokemonname"></div></pre>
-
-                            <h4 class="mini-title"><code>{pokedexID}</code></h4>
-                            <p>Searches the database and retrives pokemon numbered {pokedexID}.<br></p>
-                            <b>Request Body (Raw JSON):</b>
-                            <pre class="sample"><div class="postpokemonid"></div></pre>
-                            <b>Output sample:</b>
-                            <pre class="sample"><div class="getpokemonid"></div></pre>
-                            <hr>
-                        </section>
-                        <section id="line4_2" class="section">
-                            <h4 class="dark-text"><code>/moves</code></h4>
-                            <h4>Request URL : <a href="https://app.pokemon-api.xyz/moves/" target="blank_">https://app.pokemon-api.xyz/moves/</a></h4>
-                            <h4 class="mini-title"><code>all</code></h4>
-                            <p>Retrieves the complete moves database.<br></p>
-                            <b>Request Body (Raw JSON):</b>
-                            <pre class="sample"><div class="postall"></div></pre>
-                            <b>Output sample:</b>
-                            <pre class="sample"><div class="getmoveall"></div></pre>
-
-                            <h4 class="mini-title"><code>random</code></h4>
-                            <p>Retrives a random move from the database.<br></p>
-                            <b>Request Body (Raw JSON):</b>
-                            <pre class="sample"><div class="postrand"></div></pre>
-                            <b>Output sample:</b>
-                            <pre class="sample"><div class="getmoverand"></div></pre>
-
-                            <h4 class="mini-title"><code>{name}</code></h4>
-                            <p>Searches the database and retrives move named {name}.<br></p>
-                            <b>Request Body (Raw JSON):</b>
-                            <pre class="sample"><div class="postmovename"></div></pre>
-                            <b>Output sample:</b>
-                            <pre class="sample"><div class="getmovename"></div></pre>
-                            <hr>
-                        </section>
-                        <section id="line4_3" class="section">
-                            <h4 class="dark-text"><code>/items</code></h4>
-                            <h4>Request URL : <a href="https://app.pokemon-api.xyz/items/" target="blank_">https://app.pokemon-api.xyz/items/</a></h4>
-                            <h4 class="mini-title"><code>all</code></h4>
-                            <p>Retrieves the complete items database.<br></p>
-                            <b>Request Body (Raw JSON):</b>
-                            <pre class="sample"><div class="postall"></div></pre>
-                            <b>Output sample:</b>
-                            <pre class="sample"><div class="getitemall"></div></pre>
-
-                            <h4 class="mini-title"><code>random</code></h4>
-                            <p>Retrives a random item from the database.<br></p>
-                            <b>Request Body (Raw JSON):</b>
-                            <pre class="sample"><div class="postrand"></div></pre>
-                            <b>Output sample:</b>
-                            <pre class="sample"><div class="getitemrand"></div></pre>
-
-                            <h4 class="mini-title"><code>{name}</code></h4>
-                            <p>Searches the database and retrives item named {name}.<br></p>
-                            <b>Request Body (Raw JSON):</b>
-                            <pre class="sample"><div class="postitemname"></div></pre>
-                            <b>Output sample:</b>
-                            <pre class="sample"><div class="getitemname"></div></pre>
-                            <hr>
-                        </section>
-                        <section id="line4_4" class="section">
-                            <h4 class="dark-text"><code>/types</code></h4>
-                            <h4>Request URL : <a href="https://app.pokemon-api.xyz/types/" target="blank_">https://app.pokemon-api.xyz/types/</a></h4>
-                            <h4 class="mini-title"><code>all</code></h4>
-                            <p>Retrieves the complete types database.<br></p>
-                            <b>Request Body (Raw JSON):</b>
-                            <pre class="sample"><div class="postall"></div></pre>
-                            <b>Output sample:</b>
-                            <pre class="sample"><div class="gettypeall"></div></pre>
-
-                            <h4 class="mini-title"><code>random</code></h4>
-                            <p>Retrives a random type from the database.<br></p>
-                            <b>Request Body (Raw JSON):</b>
-                            <pre class="sample"><div class="postrand"></div></pre>
-                            <b>Output sample:</b>
-                            <pre class="sample"><div class="gettyperand"></div></pre>
-
-                            <h4 class="mini-title"><code>{name}</code></h4>
-                            <p>Searches the database and retrives type named {name}.<br></p>
-                            <b>Request Body (Raw JSON):</b>
-                            <pre class="sample"><div class="posttypename"></div></pre>
-                            <b>Output sample:</b>
-                            <pre class="sample"><div class="gettypename"></div></pre>
-                            <hr>
-                        </section>
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line5" class="section">
-                        <div class="row">
-                            <div class="col-md-12 left-align">
                                 <h2 class="dark-text">Usage Examples<a href="#top">#back to top</a>
                                     <hr>
                                 </h2>
@@ -430,7 +296,7 @@
                     </section>
                     <!-- end section -->
 
-                    <section id="line6" class="section">
+                    <section id="line5" class="section">
                         <div class="row">
                             <div class="col-md-12 left-align">
                                 <h2 class="dark-text">Change log <a href="#top">#back to top</a>
@@ -443,6 +309,11 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <pre class="brush: html">
+                                        -----------------------------------------------------------------------------------------
+                                        Version 1.2.3 - Sep 22th, 2020
+                                        -----------------------------------------------------------------------------------------
+                                        - Removed POST request endpoints (In the favour of better performance)
+                                        - Removed other unnessary endpoints
 
                                         -----------------------------------------------------------------------------------------
                                         Version 1.2.1 - Sep 22th, 2020
@@ -473,8 +344,7 @@
                     </section>
                     <!-- end section -->
 
-                    <section id="line7" class="section">
-
+                    <section id="line6" class="section">
                         <div class="row">
                             <div class="col-md-12 left-align">
                                 <h2 class="dark-text">Copyright and license <a href="#top">#back to top</a>
