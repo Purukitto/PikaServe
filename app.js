@@ -9,6 +9,7 @@ const rateLimit = require("express-rate-limit");
 
 app.set('trust proxy', 1);
 
+// RATE LIMITING START
 const apiLimiter = rateLimit({
     windowMs: 60 * 60 * 1000, // 1 hour
     max: 2500 // limit each IP to 2500 requests per hour
@@ -23,6 +24,7 @@ app.use("/pokemon", apiLimiter);
 app.use("/types", apiLimiter);
 app.use("/items", apiLimiter);
 app.use("/moves", apiLimiter);
+// RATE LIMITING END
 
 
 app.use(morgan('dev'));
