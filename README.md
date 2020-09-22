@@ -25,6 +25,7 @@ Please visit the [Wiki](https://purukitto.github.io/pokemon-api/) for more infor
 - [X] Change host and move to custom DNS (v1)
 - [X] Wiki
   - [ ] **[WIP]** Add Usage Examples
+- [ ] Implement basic rate limits (For DDoS protection)
 - [ ] FrontEnd Panel
 - [ ] Develop interactions with the different queries
 - [ ] Update [database](https://github.com/Purukitto/pokemon-data.json) to include Gen 8 (Looking for contributors)
