@@ -1,4 +1,18 @@
-# pokemon-api
+<h1 align="center">pokemon-api</h1>
+
+<p align="center">
+
+Pokemon-api is a simple to use, no bull-sh*t API endpoint to query data available in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
+It can be currently queried at https://app.pokemon-api.xyz
+
+</p>
+
+<p align="center">  <a href="https://purukitto.github.io/pokemon-api/">
+    <img alt="pokemon-API" src="wiki.png" width="728">
+  </a>
+</p>
+
+<div align="center">
 
 ![Development Stage](https://img.shields.io/badge/version-v1.1.2-blue)
 [![Documentation](https://img.shields.io/badge/wiki-WIP-red)](https://purukitto.github.io/pokemon-api/)
@@ -6,22 +20,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/Purukitto/pokemon-api/badge.svg)](https://snyk.io/test/github/Purukitto/pokemon-api)
 [![License](https://img.shields.io/github/license/Purukitto/pokemon-api)](https://github.com/Purukitto/pokemon-api/blob/master/LICENSE.md)
 
-<!--
-<p align="center">
-  <a href="https://github.com/Purukitto/pokemon-api/">
-    <img alt="pokemon-API" src="logo.png" width="500">
-  </a>
-</p>
--->
-
-<p align="center">
-  <a href="https://purukitto.github.io/pokemon-api/">
-    <img alt="pokemon-API" src="wiki.png" width="728">
-  </a>
-</p>
-
-Pokemon-api is a simple to use, no bull-sh*t API endpoint to query data available in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
-It can be currently queried at https://app.pokemon-api.xyz
+</div>
 
 ## API Usage
 Please visit the [Wiki](https://purukitto.github.io/pokemon-api/) for more information
