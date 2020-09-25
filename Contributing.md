@@ -16,7 +16,7 @@ Routes:
 - [/pokemon.js](/api/routes/pokemon.js)
 - [/items.js](/api/routes/items.js)
 - [/moves.js](/api/routes/moves.js)
-- [/type](/api/routes/type.js)
+- [/types.js](/api/routes/types.js)
 
 ### Web portal
 
