@@ -69,6 +69,7 @@ Why to self host?
 * Refactoring contributions are welcome, explicitly mention "[Refactor]" in your pull request
 * Give a few days to review PRs, code reviews are welcome 
 
+See [Contributing.md](/Contributing.md) for more details
 <hr>
 
 ## License
