@@ -21,7 +21,7 @@ router.get('/:typeName', (req, res) => {
                 } else {
                     var i;
                     for (i = 0; i < data.length; i++) {
-                        if (data[i].english.toLowerCase().replace(' ', '') == typeName) {
+                        if (data[i].english.toLowerCase().replace(/ /g, '') == typeName) {
                             return res.status(200).json(data[i]);
                         }
                     }

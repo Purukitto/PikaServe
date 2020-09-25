@@ -26,7 +26,7 @@ router.get('/:pokemonName', (req, res) => {
                 } else {
                     var i;
                     for (i = 0; i < data.length; i++) {
-                        if (data[i].name.english.toLowerCase().replace(' ', '') == pokeInp) {
+                        if (data[i].name.english.toLowerCase().replace(/ /g, '') == pokeInp) {
                             return res.status(200).json(data[i]);
                         }
                     }

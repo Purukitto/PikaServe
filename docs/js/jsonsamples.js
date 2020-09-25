@@ -154,12 +154,11 @@ $(document).ready(function() {
     var c4 = document.getElementsByClassName("getitemid");
 
     $(c1).jsonView([{
-        "name": {
-            "japanese": "マスターボール",
-            "english": "Master Ball",
-            "chinese": "大师球"
-        },
-        "id": 1
+        "id": 1,
+        "ename": "Master Ball",
+        "type": "Standard Balls",
+        "cost": 0,
+        "pocket": "Pokeballs"
     }, {
         "object with id": 2
     }, {
@@ -167,32 +166,27 @@ $(document).ready(function() {
     }]);
 
     $(c2).jsonView({
-        "id": 577,
-        "name": {
-            "english": "Poké Toy",
-            "japanese": "ポケじゃらし",
-            "chinese": "宝可尾草"
-        }
+        "id": 492,
+        "ename": "Data Card 07",
+        "type": "Data Cards",
+        "cost": 0,
+        "pocket": "Key"
     });
 
     $(c3).jsonView({
-        "id": 800,
-        "name": {
-            "chinese": "西狮海壬Ｚ",
-            "english": "Primarium Z",
-            "japanese": "アシレーヌＺ"
-        }
+        "id": 427,
+        "ename": "Bicycle",
+        "type": "Gameplay",
+        "cost": 0,
+        "pocket": "Key"
     });
 
-    // TODO
-
     $(c4).jsonView({
-        "id": 800,
-        "name": {
-            "chinese": "西狮海壬Ｚ",
-            "english": "Primarium Z",
-            "japanese": "アシレーヌＺ"
-        }
+        "id": 420,
+        "ename": "Vs Seeker",
+        "type": "Gameplay",
+        "cost": 0,
+        "pocket": "Key"
     });
 
     // MOVES
@@ -234,11 +228,11 @@ $(document).ready(function() {
     });
 
     $(d4).jsonView({
-        "english": "Fairy",
-        "chinese": "妖精",
-        "japanese": "フェアリー",
-        "effective": ["Fighting", "Dragon", "Dark"],
-        "ineffective": ["Fire", "Poisin", "Steel"],
+        "english": "Ice",
+        "chinese": "冰",
+        "japanese": "こおり",
+        "effective": ["Grass", "Ground", "Flying", "Dragon"],
+        "ineffective": ["Fire", "Water", "Ice", "Steel"],
         "no_effect": []
     });
 });
