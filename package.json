@@ -4,7 +4,7 @@
     "description": "��#\u0000 \u0000p\u0000o\u0000k\u0000e\u0000m\u0000o\u0000n\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000",
     "main": "index.js",
     "scripts": {
-        "test": "node server.js",
+        "test": "jest",
         "start": "node server.js"
     },
     "repository": {
@@ -25,6 +25,8 @@
         "morgan": "^1.10.0"
     },
     "devDependencies": {
-        "nodemon": "^2.0.4"
+        "jest": "^26.4.2",
+        "nodemon": "^2.0.4",
+        "supertest": "^4.0.2"
     }
 }
