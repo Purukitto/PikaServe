@@ -12,11 +12,11 @@ describe("Testing the types API", () => {
         expect(response.status).toBe(200);
         expect(response.body).toEqual(expect.anything());
     });
-    // it("tests the get id endpoint", async() => {
-    //     const response = await supertest(app).get('/types/699');
-    //     expect(response.status).toBe(200);
-    //     expect(response.body.id).toEqual(699);
-    // });
+    it("tests the get id endpoint", async() => {
+        const response = await supertest(app).get('/types/18');
+        expect(response.status).toBe(200);
+        expect(response.body.english).toEqual('Fairy');
+    });
     it("tests the get name endpoint", async() => {
         const response = await supertest(app).get('/types/fairy');
         expect(response.status).toBe(200);

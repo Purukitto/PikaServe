@@ -16,15 +16,19 @@ router.get('/:typeName', (req, res) => {
                 var randID = Math.floor(Math.random() * (data.length));
                 return res.status(200).json(data[randID]);
             } else {
-                var i;
-                for (i = 0; i < data.length; i++) {
-                    if (data[i].english.toLowerCase().replace(' ', '') == typeName) {
-                        return res.status(200).json(data[i]);
+                if (parseInt(typeName)) {
+                    return res.status(200).json(data[typeName - 1]);
+                } else {
+                    var i;
+                    for (i = 0; i < data.length; i++) {
+                        if (data[i].english.toLowerCase().replace(' ', '') == typeName) {
+                            return res.status(200).json(data[i]);
+                        }
                     }
+                    return res.status(200).json({
+                        message: "Please check the name again"
+                    });
                 }
-                return res.status(200).json({
-                    message: "Please check the name again"
-                });
             }
         } else {
             return res.status(500).json(error);

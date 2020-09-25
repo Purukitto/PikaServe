@@ -16,6 +16,9 @@ router.get('/:itemName', (req, res) => {
                 var randID = Math.floor(Math.random() * (data.length));
                 return res.status(200).json(data[randID]);
             } else {
+                // if (parseInt(itemName)) {
+                //     return res.status(200).json(data[itemName - 1]);
+                // } else {
                 var i;
                 for (i = 0; i < data.length; i++) {
                     if (data[i].name.english.toLowerCase().replace(' ', '') == itemName) {
@@ -25,6 +28,7 @@ router.get('/:itemName', (req, res) => {
                 return res.status(200).json({
                     message: "Please check the name again"
                 });
+                // }
             }
         } else {
             return res.status(500).json(error);
