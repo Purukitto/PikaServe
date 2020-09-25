@@ -93,6 +93,7 @@ $(document).ready(function() {
     var b1 = document.getElementsByClassName("getmoveall");
     var b2 = document.getElementsByClassName("getmoverand");
     var b3 = document.getElementsByClassName("getmovename");
+    var b4 = document.getElementsByClassName("getmoveid");
 
     $(b1).jsonView([{
         "accuracy": 100,
@@ -134,10 +135,23 @@ $(document).ready(function() {
         "type": "Water"
     });
 
+    $(b4).jsonView({
+        "accuracy": 100,
+        "category": "特殊",
+        "cname": "协助力量",
+        "ename": "Stored Power",
+        "id": 500,
+        "jname": "アシストパワー",
+        "power": 20,
+        "pp": 10,
+        "type": "Psychic"
+    });
+
     // ITEMS
     var c1 = document.getElementsByClassName("getitemall");
     var c2 = document.getElementsByClassName("getitemrand");
     var c3 = document.getElementsByClassName("getitemname");
+    var c4 = document.getElementsByClassName("getitemid");
 
     $(c1).jsonView([{
         "name": {
@@ -170,10 +184,23 @@ $(document).ready(function() {
         }
     });
 
+    // TODO
+
+    $(c4).jsonView({
+        "id": 800,
+        "name": {
+            "chinese": "西狮海壬Ｚ",
+            "english": "Primarium Z",
+            "japanese": "アシレーヌＺ"
+        }
+    });
+
     // MOVES
     var d1 = document.getElementsByClassName("gettypeall");
     var d2 = document.getElementsByClassName("gettyperand");
     var d3 = document.getElementsByClassName("gettypename");
+    var d4 = document.getElementsByClassName("gettypeid");
+
 
     $(d1).jsonView([{
         "english": "Normal",
@@ -206,41 +233,12 @@ $(document).ready(function() {
         "no_effect": []
     });
 
-    // POST POKEMON
-    var z1 = document.getElementsByClassName("postall");
-    var z2 = document.getElementsByClassName("postrand");
-    var z3 = document.getElementsByClassName("postpokemonname");
-    var z4 = document.getElementsByClassName("postpokemonid");
-
-    $(z1).jsonView({
-        "input": "all"
-    });
-
-    $(z2).jsonView({
-        "input": "random"
-    });
-
-    $(z3).jsonView({
-        "input": "Infernape"
-    });
-
-    $(z4).jsonView({
-        "input": "696"
-    });
-
-    // POST MOVES
-    var y1 = document.getElementsByClassName("postmovename");
-    $(y1).jsonView({
-        "input": "Water Shuriken"
-    });
-    // POST ITEMS
-    var y1 = document.getElementsByClassName("postitemname");
-    $(y1).jsonView({
-        "input": "Primarium Z"
-    });
-    // POST TYPES
-    var y1 = document.getElementsByClassName("posttypename");
-    $(y1).jsonView({
-        "input": "Fairy"
+    $(d4).jsonView({
+        "english": "Fairy",
+        "chinese": "妖精",
+        "japanese": "フェアリー",
+        "effective": ["Fighting", "Dragon", "Dark"],
+        "ineffective": ["Fire", "Poisin", "Steel"],
+        "no_effect": []
     });
 });

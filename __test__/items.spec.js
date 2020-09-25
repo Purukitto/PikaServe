@@ -12,14 +12,14 @@ describe("Testing the items API", () => {
         expect(response.status).toBe(200);
         expect(response.body).toEqual(expect.anything());
     });
-    // it("tests the get id endpoint", async() => {
-    //     const response = await supertest(app).get('/items/119');
-    //     expect(response.status).toBe(200);
-    //     expect(response.body.id).toEqual(119);
-    // });
+    it("tests the get id endpoint", async() => {
+        const response = await supertest(app).get('/items/500');
+        expect(response.status).toBe(200);
+        expect(response.body.id).toEqual(500);
+    });
     it("tests the get name endpoint", async() => {
         const response = await supertest(app).get('/items/masterball');
         expect(response.status).toBe(200);
-        expect(response.body.name.english).toEqual('Master Ball');
+        expect(response.body.ename).toEqual('Master Ball');
     });
 });

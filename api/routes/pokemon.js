@@ -17,7 +17,12 @@ router.get('/:pokemonName', (req, res) => {
                 return res.status(200).json(data[randID]);
             } else {
                 if (parseInt(pokeInp)) {
-                    return res.status(200).json(data[pokeInp - 1]);
+                    var i;
+                    for (i = 0; i < data.length; i++) {
+                        if (data[i].id == pokeInp) {
+                            return res.status(200).json(data[i]);
+                        }
+                    }
                 } else {
                     var i;
                     for (i = 0; i < data.length; i++) {

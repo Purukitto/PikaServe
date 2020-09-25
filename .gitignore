@@ -2,6 +2,8 @@
 .vscode
 .deployment
 docs/temp.html
+testing.js
+testing.json
 
 # Logs
 logs

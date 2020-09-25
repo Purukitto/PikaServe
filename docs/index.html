@@ -54,7 +54,7 @@
                     <div class="col-md-12">
                         <div class="big-title text-center">
                             <h1>Pokemon-API Wiki</h1>
-                            <p class="lead">pokemon-api v1.2.2</p>
+                            <p class="lead">pokemon-api 1.2.5</p>
                         </div>
                         <!-- end title -->
                     </div>
@@ -97,7 +97,7 @@
                                         <div class="intro1">
                                             <ul>
                                                 <li><strong>Project Name : </strong>pokemon-api</li>
-                                                <li><strong>Project Version : </strong>v1.2.2</li>
+                                                <li><strong>Project Version : </strong>v1.2.5</li>
                                                 <li><strong>Project URL : </strong> <a href="https://github.com/Purukitto/pokemon-api" target="_blank">https://github.com/Purukitto/pokemon-api</a></li>
                                                 <li><strong>Query Endpoint : </strong> <a href="https://app.pokemon-api.xyz/" target="_blank">app.pokemon-api.xyz/</a></li>
                                                 <li><strong>Database URL : </strong> <a href="https://github.com/Purukitto/pokemon-data.json" target="_blank">https://github.com/Purukitto/pokemon-data.json</a></li>
@@ -239,6 +239,11 @@
                             <p>Searches the database and retrives move named {name}.<br>Request URL : <a href="https://app.pokemon-api.xyz/moves/watershuriken" target="blank_">https://app.pokemon-api.xyz/moves/watershuriken</a></p>
                             <b>Output sample:</b>
                             <pre class="sample"><div class="getmovename"></div></pre>
+
+                            <h4 class="mini-title"><code>/moves/{movesID}</code></h4>
+                            <p>Searches the database and retrives move numbered {movesID}.<br>Request URL : <a href="https://app.pokemon-api.xyz/moves/500" target="blank_">https://app.pokemon-api.xyz/pokemon/500</a></p>
+                            <b>Output sample:</b>
+                            <pre class="sample"><div class="getmoveid"></div></pre>
                             <hr>
                         </section>
                         <section id="line3_3" class="section">
@@ -257,6 +262,11 @@
                             <p>Searches the database and retrives item named {name}.<br>Request URL : <a href="https://app.pokemon-api.xyz/items/primariumz" target="blank_">https://app.pokemon-api.xyz/items/primariumz</a></p>
                             <b>Output sample:</b>
                             <pre class="sample"><div class="getitemname"></div></pre>
+
+                            <h4 class="mini-title"><code>/items/{itemsID}</code></h4>
+                            <p>Searches the database and retrives item numbered {itemsID}.<br>Request URL : <a href="https://app.pokemon-api.xyz/items/500" target="blank_">https://app.pokemon-api.xyz/items/500</a></p>
+                            <b>Output sample:</b>
+                            <pre class="sample"><div class="getitemid"></div></pre>
                             <hr>
                         </section>
                         <section id="line3_4" class="section">
@@ -275,6 +285,11 @@
                             <p>Searches the database and retrives type named {name}.<br>Request URL : <a href="https://app.pokemon-api.xyz/types/fairy" target="blank_">https://app.pokemon-api.xyz/types/fairy</a></p>
                             <b>Output sample:</b>
                             <pre class="sample"><div class="gettypename"></div></pre>
+
+                            <h4 class="mini-title"><code>/types/{typesID}</code></h4>
+                            <p>Searches the database and retrives type numbered {typesID}.<br>Request URL : <a href="https://app.pokemon-api.xyz/types/500" target="blank_">https://app.pokemon-api.xyz/types/500</a></p>
+                            <b>Output sample:</b>
+                            <pre class="sample"><div class="gettypeid"></div></pre>
                             <hr>
                         </section>
                     </section>
@@ -310,6 +325,13 @@
                             <div class="col-md-12">
                                 <pre class="brush: html">
                                         -----------------------------------------------------------------------------------------
+                                        Version 1.2.5 - Sep 25th, 2020
+                                        -----------------------------------------------------------------------------------------
+                                        - Added ID query to /moves, /items and /types
+                                        - Changed the /items structure 
+
+
+                                        -----------------------------------------------------------------------------------------
                                         Version 1.2.3 - Sep 22th, 2020
                                         -----------------------------------------------------------------------------------------
                                         - Removed POST request endpoints (In the favour of better performance)
@@ -319,18 +341,6 @@
                                         Version 1.2.1 - Sep 22th, 2020
                                         -----------------------------------------------------------------------------------------
                                         - Implemented rate limits (2500 API calls per hour)
-
-                                        -----------------------------------------------------------------------------------------
-                                        Version 1.1.1 - Sep 21th, 2020
-                                        -----------------------------------------------------------------------------------------
-                                        - Added SSL
-                                        - API now served over HTTPS
-
-
-                                        -----------------------------------------------------------------------------------------
-                                        Version 1.0.1 - Sep 21th, 2020
-                                        -----------------------------------------------------------------------------------------
-                                        - Fixed CORS erros
                                 </pre>
                             </div>
                         </div>
