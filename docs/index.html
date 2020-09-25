@@ -45,10 +45,18 @@
     <header>
         <img class="logo" src="https://raw.githubusercontent.com/Purukitto/pokemon-api/master/logo.png" alt="pokemon-api">
         <nav>
+            <div class="theme-switch-wrapper">
+                <p><strong id="theme-text">Dark Mode  _</strong></p>
+                <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+                </label>
+            </div>
             <ul class="nav__links">
-                <li class="active"><a href="">Documentation</a></li>
+                <li class="active"><a href=""><strong>Documentation</strong></a></li>
                 <!-- <li><a href="">Applet</a></li> -->
             </ul>
+
         </nav>
     </header>
     <div id="wrapper">
@@ -362,7 +370,7 @@ fetchUrl(url, function(error, meta, body) {
                     </section>
                     <!-- end section -->
 
-                    <section id="line5 " class="section ">
+                    <section id="line5" class="section ">
                         <div class="row ">
                             <div class="col-md-12 left-align ">
                                 <h2 class="dark-text ">Change log <a href="#top ">#back to top</a>
@@ -408,7 +416,7 @@ Version 1.2.1 - Sep 22th, 2020
                     </section>
                     <!-- end section -->
 
-                    <section id="line6 " class="section ">
+                    <section id="line6" class="section ">
                         <div class="row ">
                             <div class="col-md-12 left-align ">
                                 <h2 class="dark-text ">Copyright and license <a href="#top ">#back to top</a>
@@ -443,9 +451,10 @@ Version 1.2.1 - Sep 22th, 2020
     <script src="js/wow.js "></script>
     <script src="js/jquery.prettyPhoto.js "></script>
 
-    <!-- CUSTOM PLUGINS -->
+    <!-- CUSTOM JS -->
     <script src="js/custom.js "></script>
     <script src="js/main.js "></script>
+    <script src="js/themes.js "></script>
     <script src="js/jsonsamples.js"></script>
 </body>
 

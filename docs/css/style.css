@@ -1,17 +1,4 @@
 /* ----------------------------------------------------
-  
-    File Name: style.css
-    Template Name: Documentation
-    Created By: Surjith S M
-    http://themeforest.net/user/surjithctly
-
-    1. IMPORT
-    2. SKELETON
-    
-------------------------------------------------------- */
-
-
-/* ----------------------------------------------------
     IMPORT  
 ------------------------------------------------------- */
 
@@ -21,9 +8,31 @@
     SKELETON    
 ------------------------------------------------------- */
 
+:root {
+    --primary-color: #EF5350;
+    --secondary-color: #FECA1B;
+    --tertiary-color: #365DA1;
+    --font-color: #3d3d3d;
+    --bg-color: #fff;
+    --heading-color: #242424;
+    --strong-color: #030303;
+    --hightlight-color: #f3f3f3;
+}
+
+[data-theme="dark"] {
+    --primary-color: #ef5350c1;
+    --secondary-color: #FECA1Bc1;
+    --tertiary-color: #365da1c1;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #dfdfdf;
+    --strong-color: #f2f3f3;
+    --hightlight-color: #030303;
+}
+
 body {
-    background: #fff;
-    color: #3d3d3d;
+    background: var(--bg-color);
+    color: var(--font-color);
     font-size: 14px;
     line-height: 31px;
     letter-spacing: 0;
@@ -43,12 +52,12 @@ h6 {
     padding: 0 0 10px 0;
     font-weight: normal;
     line-height: 1.8;
-    color: #242424;
+    color: var(--heading-color);
 }
 
 h1 {
     font-size: 22px;
-    color: #EF5350;
+    color: var(--primary-color);
 }
 
 h2 {
@@ -113,7 +122,6 @@ ol li ul li {
 }
 
 img.alignleft {
-    float: left;
     margin: 6px 20px 6px 0;
     display: inline;
     border: 0px;
@@ -178,7 +186,7 @@ p {
     font-family: "FontAwesome";
     font-size: 16px;
     left: 0;
-    color: #242424;
+    color: var(--heading-color);
     padding-right: 5px;
     position: relative;
     top: 2px;
@@ -202,15 +210,15 @@ p {
 }
 
 .white {
-    background-color: #ffffff;
+    background-color: var(--bg-color);
 }
 
 strong {
-    color: #030303;
+    color: var(--strong-color);
 }
 
 .grey {
-    background-color: #f3f3f3;
+    background-color: var(--hightlight-color);
 }
 
 .big-title h1 {
@@ -236,7 +244,7 @@ h4 a {
     font-size: 14px;
     font-weight: bold;
     padding-left: 20px;
-    color: #EF5350;
+    color: var(--primary-color);
 }
 
 .dark-text hr {
@@ -244,7 +252,7 @@ h4 a {
     margin-left: 0;
     margin-top: 40px;
     border-width: 1px;
-    border-color: #030303;
+    border-color: var(--strong-color);
 }
 
 .intro {
@@ -254,23 +262,19 @@ h4 a {
 .intro1 {
     margin-top: 22px;
     padding: 30px 0px;
-    background-color: #f3f3f3;
+    background-color: var(--hightlight-color);
 }
 
 .intro1 li {
     list-style: none;
 }
 
-
-/* background-color: #EF5350;
-border: 2px solid #FECA1B; */
-
 .intro1 a {
-    color: #EF5350 !important;
+    color: var(--primary-color) !important;
 }
 
 .intro a {
-    color: #030303;
+    color: var(--strong-color);
     font-weight: 400;
     font-size: 16px;
 }
@@ -284,7 +288,7 @@ border: 2px solid #FECA1B; */
 }
 
 .drop-caps p:first-child::first-letter {
-    color: #030303;
+    color: var(--strong-color);
     display: block;
     float: left;
     font-size: 75px;
@@ -296,8 +300,8 @@ border: 2px solid #FECA1B; */
 }
 
 .drop-caps.full p:first-child::first-letter {
-    background: #030303 none repeat scroll 0 0 !important;
-    color: #ffffff;
+    background: var(--strong-color) none repeat scroll 0 0 !important;
+    color: var(--bg-color);
     margin-right: 15px;
     padding: 20px;
     font-size: 36px;
@@ -306,14 +310,14 @@ border: 2px solid #FECA1B; */
 }
 
 mark {
-    background-color: #0E97EE;
-    color: #ffffff;
+    background-color: var(--tertiary-color);
+    color: var(--bg-color);
     padding: 0 10px;
 }
 
 a:focus,
 a:hover {
-    color: #0E97EE;
+    color: var(--tertiary-color);
 }
 
 .intro2 i {
@@ -322,10 +326,10 @@ a:hover {
 }
 
 .intro2 {
-    background-color: #EF5350;
-    border: 2px solid #FECA1B;
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
     border-radius: 5px;
-    color: #ffffff;
+    color: #fff;
     font-style: italic;
     padding: 10px 20px;
 }
@@ -335,13 +339,13 @@ a:hover {
 }
 
 .intro2 a {
-    color: #ffffff;
+    color: #fff;
     font-weight: bold;
 }
 
 a:focus,
 a:hover {
-    color: #FECA1B;
+    color: var(--secondary-color);
 }
 
 .intro3 i {
@@ -350,10 +354,10 @@ a:hover {
 }
 
 .intro3 {
-    background-color: #365DA1;
-    border: 2px solid #FECA1B;
+    background-color: var(--tertiary-color);
+    border: 2px solid var(--secondary-color);
     border-radius: 5px;
-    color: #ffffff;
+    color: #fff;
     font-style: italic;
     padding: 10px 20px;
 }
@@ -363,7 +367,7 @@ a:hover {
 }
 
 .intro3 a {
-    color: #FECA1B;
+    color: var(--secondary-color);
     font-weight: bold;
 }
 
@@ -372,34 +376,30 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: #0E97EE;
-    border: 1px solid #2187BB;
+    background-color: var(--tertiary-color);
 }
 
 .btn-primary:hover {
-    background-color: #2187BB;
-    border: 1px solid #0E97EE;
+    background-color: var(--tertiary-color);
 }
 
 .btn-info {
     background-color: #545454;
-    border: 1px solid #656565;
 }
 
 .btn-info:hover {
     background-color: #656565;
-    border: 1px solid #545454;
 }
 
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:hover,
 .navbar-inverse .navbar-nav>.active>a:focus {
-    background-color: #0E97EE;
-    color: #fff;
+    background-color: var(--tertiary-color);
+    color: var(--bg-color);
 }
 
 .navbar-inverse {
-    background-color: #030303;
+    background-color: var(--strong-color);
     border: 0;
 }
 
@@ -409,5 +409,5 @@ a:hover {
 }
 
 .navbar-inverse li.btn a {
-    color: #ffffff !important;
+    color: var(--bg-color) !important;
 }
