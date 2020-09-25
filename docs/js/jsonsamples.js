@@ -6,7 +6,7 @@ $(document).ready(function() {
     var a3 = document.getElementsByClassName("getpokemonname");
     var a4 = document.getElementsByClassName("getpokemonid");
 
-    $(a1).jsonView(
+    $(a1).append(JSON.stringify(
         [{
             "id": 1,
             "name": {
@@ -28,10 +28,10 @@ $(document).ready(function() {
             "object with id": 2
         }, {
             "object with id": 3
-        }]
-    );
+        }], null, 4
+    ));
 
-    $(a2).jsonView({
+    $(a2).append(JSON.stringify({
         "id": 780,
         "name": {
             "english": "Drampa",
@@ -48,9 +48,9 @@ $(document).ready(function() {
             "Sp. Defense": 91,
             "Speed": 36
         }
-    });
+    }, null, 4));
 
-    $(a3).jsonView({
+    $(a3).append(JSON.stringify({
         "id": 392,
         "name": {
             "english": "Infernape",
@@ -67,10 +67,10 @@ $(document).ready(function() {
             "Sp. Defense": 71,
             "Speed": 108
         }
-    });
+    }, null, 4));
 
 
-    $(a4).jsonView({
+    $(a4).append(JSON.stringify({
         "id": 696,
         "name": {
             "english": "Tyrunt",
@@ -87,7 +87,7 @@ $(document).ready(function() {
             "Sp. Defense": 45,
             "Speed": 48
         }
-    });
+    }, null, 4));
 
     // MOVES
     var b1 = document.getElementsByClassName("getmoveall");
@@ -95,7 +95,7 @@ $(document).ready(function() {
     var b3 = document.getElementsByClassName("getmovename");
     var b4 = document.getElementsByClassName("getmoveid");
 
-    $(b1).jsonView([{
+    $(b1).append(JSON.stringify([{
         "accuracy": 100,
         "category": "物理",
         "cname": "拍击",
@@ -109,9 +109,9 @@ $(document).ready(function() {
         "object with id": 2
     }, {
         "object with id": 3
-    }]);
+    }], null, 4));
 
-    $(b2).jsonView({
+    $(b2).append(JSON.stringify({
         "accuracy": 30,
         "category": "特殊",
         "cname": "绝对零度",
@@ -121,9 +121,9 @@ $(document).ready(function() {
         "power": null,
         "pp": 5,
         "type": "Ice"
-    });
+    }, null, 4));
 
-    $(b3).jsonView({
+    $(b3).append(JSON.stringify({
         "accuracy": 100,
         "category": "物理",
         "cname": "水之手里剑",
@@ -133,9 +133,9 @@ $(document).ready(function() {
         "power": 15,
         "pp": 20,
         "type": "Water"
-    });
+    }, null, 4));
 
-    $(b4).jsonView({
+    $(b4).append(JSON.stringify({
         "accuracy": 100,
         "category": "特殊",
         "cname": "协助力量",
@@ -145,7 +145,7 @@ $(document).ready(function() {
         "power": 20,
         "pp": 10,
         "type": "Psychic"
-    });
+    }, null, 4));
 
     // ITEMS
     var c1 = document.getElementsByClassName("getitemall");
@@ -153,7 +153,7 @@ $(document).ready(function() {
     var c3 = document.getElementsByClassName("getitemname");
     var c4 = document.getElementsByClassName("getitemid");
 
-    $(c1).jsonView([{
+    $(c1).append(JSON.stringify([{
         "id": 1,
         "ename": "Master Ball",
         "type": "Standard Balls",
@@ -163,31 +163,31 @@ $(document).ready(function() {
         "object with id": 2
     }, {
         "object with id": 3
-    }]);
+    }], null, 4));
 
-    $(c2).jsonView({
+    $(c2).append(JSON.stringify({
         "id": 492,
         "ename": "Data Card 07",
         "type": "Data Cards",
         "cost": 0,
         "pocket": "Key"
-    });
+    }, null, 4));
 
-    $(c3).jsonView({
+    $(c3).append(JSON.stringify({
         "id": 427,
         "ename": "Bicycle",
         "type": "Gameplay",
         "cost": 0,
         "pocket": "Key"
-    });
+    }, null, 4));
 
-    $(c4).jsonView({
+    $(c4).append(JSON.stringify({
         "id": 420,
         "ename": "Vs Seeker",
         "type": "Gameplay",
         "cost": 0,
         "pocket": "Key"
-    });
+    }, null, 4));
 
     // MOVES
     var d1 = document.getElementsByClassName("gettypeall");
@@ -196,7 +196,7 @@ $(document).ready(function() {
     var d4 = document.getElementsByClassName("gettypeid");
 
 
-    $(d1).jsonView([{
+    $(d1).append(JSON.stringify([{
         "english": "Normal",
         "chinese": "一般",
         "japanese": "ノーマル",
@@ -207,32 +207,32 @@ $(document).ready(function() {
         "object with id": 2
     }, {
         "object with id": 3
-    }]);
+    }], null, 4));
 
-    $(d2).jsonView({
+    $(d2).append(JSON.stringify({
         "english": "Ground",
         "chinese": "地上",
         "japanese": "じめん",
         "effective": ["Fire", "Electric", "Poison", "Rock", "Steel"],
         "ineffective": ["Grass", "Bug"],
         "no_effect": ["Flying"]
-    });
+    }, null, 4));
 
-    $(d3).jsonView({
+    $(d3).append(JSON.stringify({
         "english": "Fairy",
         "chinese": "妖精",
         "japanese": "フェアリー",
         "effective": ["Fighting", "Dragon", "Dark"],
         "ineffective": ["Fire", "Poisin", "Steel"],
         "no_effect": []
-    });
+    }, null, 4));
 
-    $(d4).jsonView({
+    $(d4).append(JSON.stringify({
         "english": "Ice",
         "chinese": "冰",
         "japanese": "こおり",
         "effective": ["Grass", "Ground", "Flying", "Dragon"],
         "ineffective": ["Fire", "Water", "Ice", "Steel"],
         "no_effect": []
-    });
+    }, null, 4));
 });

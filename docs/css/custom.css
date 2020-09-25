@@ -53,37 +53,19 @@
 /* JSON Output */
 
 pre {
-    outline: 1px solid #ccc;
-    padding: 5px;
-    margin: 5px;
+    outline: transparent;
+    padding: 0px;
 }
 
 .sample {
+    outline: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
     background-color: #dfdfdfc0;
 }
 
 .mini-title {
     padding-top: 50px;
-}
-
-.string {
-    color: green;
-}
-
-.number {
-    color: darkorange;
-}
-
-.boolean {
-    color: blue;
-}
-
-.null {
-    color: magenta;
-}
-
-.key {
-    color: red;
 }
 
 
