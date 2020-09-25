@@ -26,3 +26,4 @@ Routes:
 - [Base JS](/docs/js/main.js)
 - [Custom JS](/docs/js/custom.js)
 - [Methods JSON output formatter](/docs/js/jsonsamples.js)
+- [Theme Switch JS](/docs/js/themes.js)
