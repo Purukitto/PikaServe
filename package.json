@@ -4,7 +4,7 @@
     "description": "��#\u0000 \u0000p\u0000o\u0000k\u0000e\u0000m\u0000o\u0000n\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000",
     "main": "index.js",
     "scripts": {
-        "test": "nodemon server.js",
+        "test": "node server.js",
         "start": "node server.js"
     },
     "repository": {
