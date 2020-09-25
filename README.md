@@ -33,9 +33,11 @@ There are hundred's of pokemon APIs already, with 20,000 ways to use and god kno
 - [X] POST queries
 - [X] Change host and move to custom DNS (v1)
 - [X] Wiki
-  - [ ] **[WIP]** Add Usage Examples
+  - [X] Add Usage Examples (Needs contribution)
+    - [X] Node.js
+    - [ ] Python
 - [X] Implement basic rate limits (For DDoS protection)
-- [ ] FrontEnd Panel
+- [ ] **[WIP]** FrontEnd Panel
 - [ ] Show closest match suggestions
 - [ ] Develop interactions with the different queries
 - [ ] Update [database](https://github.com/Purukitto/pokemon-data.json) to include Gen 8 (Looking for contributors)
