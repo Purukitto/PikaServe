@@ -36,6 +36,7 @@ There are hundred's of pokemon APIs already, with 20,000 ways to use and god kno
   - [ ] **[WIP]** Add Usage Examples
 - [X] Implement basic rate limits (For DDoS protection)
 - [ ] FrontEnd Panel
+- [ ] Show closest match suggestions
 - [ ] Develop interactions with the different queries
 - [ ] Update [database](https://github.com/Purukitto/pokemon-data.json) to include Gen 8 (Looking for contributors)
 
