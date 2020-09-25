@@ -37,6 +37,7 @@ There are hundred's of pokemon APIs already, with 20,000 ways to use and god kno
     - [X] Node.js
     - [ ] Python
 - [X] Implement basic rate limits (For DDoS protection)
+- [X] Implement dark/light theme for website
 - [ ] **[WIP]** FrontEnd Panel
 - [ ] Show closest match suggestions
 - [ ] Develop interactions with the different queries
