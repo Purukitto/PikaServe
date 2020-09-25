@@ -5,7 +5,7 @@ const fetchUrl = require("fetch").fetchUrl;
 const pokedex = "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/moves.json"
 
 router.get('/:itemName', (req, res) => {
-    const itemName = req.params.itemName;
+    const itemName = req.params.itemName.toLowerCase().replace(/\s/g, '');
     fetchUrl(pokedex, function(error, meta, body) {
         if (!error) {
             var data = new String();
@@ -26,7 +26,7 @@ router.get('/:itemName', (req, res) => {
                 } else {
                     var i;
                     for (i = 0; i < data.length; i++) {
-                        if (data[i].ename.toLowerCase().replace(/ /g, '') == itemName) {
+                        if (data[i].ename.toLowerCase().replace(/\s/g, '') == itemName) {
                             return res.status(200).json(data[i]);
                         }
                     }
