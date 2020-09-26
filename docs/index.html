@@ -94,6 +94,7 @@
                             <li><a href="#line4">Usage Examples</a>
                                 <ul class="nav">
                                     <li><a href="#line4_1">Node.js (JavaScript)</a></li>
+                                    <li><a href="#line4_2">Python</a></li>
                                 </ul>
                             </li>
                             <li><a href="#line5">Changelog</a></li>
@@ -320,13 +321,13 @@
                         </div>
                         <!-- end row -->
                         <section id="line4_1" class="section">
-                            <h4 class="dark-text">Node.js</h4>
+                            <h4 class="dark-text">Node.js (JavaScript)</h4>
                             <h4 class="mini-title"><strong>Using npm fetch</strong></h4>
                             <ul class="bullet-list">
-                                <li><strong>Install fetch using npm (or yarn)</strong></li>
+                                <li><strong>Install <code>fetch</code> using npm (or yarn)</strong></li>
                                 <pre><code>npm i fetch</code></pre> or
                                 <pre><code>yarn add node-fetch</code></pre>
-                                <li><strong>Create a file "pokemon-api.js"</strong></li>
+                                <li><strong>Create a file <code>pokemon-api.js</code></strong></li>
                                 <pre><code>
 const fetchUrl = require("fetch ").fetchUrl;
 
@@ -343,7 +344,7 @@ fetchUrl(url, function(error, meta, body) {
                                 </code></pre>
                                 <li><strong>Run the file using the following code (in the terminal)</strong></li>
                                 <pre><code>node pokemon-api.js</code></pre>
-                                <li><strong>You will see the output in the terminal in this case</strong></li>
+                                <li><strong>You will see the following output in the terminal in this case</strong></li>
                                 <pre><code>
 // Sample Output
 {
@@ -366,6 +367,47 @@ fetchUrl(url, function(error, meta, body) {
 }
                                 </code></pre>
                             </ul>
+                        </section>
+                        <section id="line4_2" class="section">
+                            <h4 class="dark-text">Python</h4>
+                            <ul class="bullet-list">
+                                <li><strong>Install <code>requests</code> using pip or any other package manager</strong></li>
+                                <pre><code>pip install requests</code></pre>
+                                <li><strong>Create a file <code>pokemon-api.py</code></strong></li>
+                                <pre><code class="py">
+import requests
+import json         # For formatting the output
+
+response = requests.get("https://app.pokemon-api.xyz/pokemon/random")
+
+# Do something with response data
+print(json.dumps(response.json(), sort_keys=True, indent=4))            #Or simply print(response.json())
+                                </code></pre>
+                                <li><strong>Run the file in your IDE or by running the following code</strong></li>
+                                <pre><code>python -u "{pathToFile}\pokemon-api.py"</code></pre>
+                                <li><strong>You will see the following output in this case</strong></li>
+                                <pre><code>
+{
+    "base": {
+        "Attack": 65,
+        "Defense": 95,
+        "HP": 40,
+        "Sp. Attack": 60,
+        "Sp. Defense": 45,
+        "Speed": 35
+    },
+    "id": 109,
+    "name": {
+        "chinese": "\u74e6\u65af\u5f39",
+        "english": "Koffing",
+        "french": "Smogo",
+        "japanese": "\u30c9\u30ac\u30fc\u30b9"
+    },
+    "type": [
+        "Poison"
+    ]
+}
+                                </code></pre> You can see a live example with this <a href="https://colab.research.google.com/drive/1eoLojz_J4cCVnXYQzJ6xrwZnBZSv98Xy?usp=sharing" target="_blank">Google Colab notebook</a>.
                         </section>
                     </section>
                     <!-- end section -->

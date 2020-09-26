@@ -2,8 +2,7 @@
 .vscode
 .deployment
 docs/temp.html
-testing.js
-testing.json
+/testing/
 temp.rar
 
 # Logs
