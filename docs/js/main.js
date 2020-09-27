@@ -1,14 +1,3 @@
-// Navbar active
-
-$(document).ready(function() {
-    "use strict";
-    $('ul.nav__links > li').click(function(e) {
-        e.preventDefault();
-        $('ul.nav__links > li').removeClass('active');
-        $(this).addClass('active');
-    });
-});
-
 function putValue(input) {
     var div = document.getElementById("input");
     div.value = input;
