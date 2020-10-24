@@ -20,6 +20,6 @@ describe("Testing the items API", () => {
     it("tests the get name endpoint", async() => {
         const response = await supertest(app).get('/items/masterball');
         expect(response.status).toBe(200);
-        expect(response.body.ename).toEqual('Master Ball');
+        expect(response.body.name.english).toEqual('Master Ball');
     });
 });
