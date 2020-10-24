@@ -6,7 +6,6 @@ const pokedex = "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/m
 
 router.get('/:itemName', (req, res) => {
     const itemName = req.params.itemName.toLowerCase().replace(/\s/g, '');
-    console.log(itemName)
     fetchUrl(pokedex, function(error, meta, body) {
         if (!error) {
             var data = new String();
