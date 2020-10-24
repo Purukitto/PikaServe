@@ -13,7 +13,7 @@ It can be currently queried at https://app.pokemon-api.xyz
 
 
 [![Documentation](https://img.shields.io/badge/wiki-updated-red)](https://purukitto.github.io/pokemon-api/)
-![Development Stage](https://img.shields.io/badge/version-v1.3.0-blue)
+![Development Stage](https://img.shields.io/badge/version-v1.4.0-blue)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d02ef50bf3f444bea0c886ac70a322d7)](https://app.codacy.com/manual/purukitto/pokemon-api?utm_source=github.com&utm_medium=referral&utm_content=Purukitto/pokemon-api&utm_campaign=Badge_Grade_Dashboard)
 
 ![Build](https://circleci.com/gh/Purukitto/pokemon-api.svg?style=shield)

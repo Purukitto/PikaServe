@@ -27,7 +27,7 @@ router.get('/:itemName', (req, res) => {
                 } else {
                     var i;
                     for (i = 0; i < data.length; i++) {
-                        if (data[i].ename.toLowerCase().replace(/\s/g, '') == itemName) {
+                        if (data[i].name.english.toLowerCase().replace(/\s/g, '') == itemName) {
                             return res.status(200).json(data[i]);
                         }
                     }
