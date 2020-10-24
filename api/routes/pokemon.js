@@ -26,9 +26,10 @@ router.get('/:pokemonName', (req, res) => {
                 } else {
                     var i;
                     for (i = 0; i < data.length; i++) {
-                        if (data[i].name.english.toLowerCase().replace(/\s/g, '') == pokeInp) {
-                            return res.status(200).json(data[i]);
-                        }
+                        if (data[i].name.english)
+                            if (data[i].name.english.toLowerCase().replace(/\s/g, '') == pokeInp) {
+                                return res.status(200).json(data[i]);
+                            }
                     }
                     return res.status(200).json({
                         message: "Please check the name/ID again"

@@ -21,9 +21,10 @@ router.get('/:typeName', (req, res) => {
                 } else {
                     var i;
                     for (i = 0; i < data.length; i++) {
-                        if (data[i].english.toLowerCase().replace(/\s/g, '') == typeName) {
-                            return res.status(200).json(data[i]);
-                        }
+                        if (data[i].english)
+                            if (data[i].english.toLowerCase().replace(/\s/g, '') == typeName) {
+                                return res.status(200).json(data[i]);
+                            }
                     }
                     return res.status(200).json({
                         message: "Please check the name again"
