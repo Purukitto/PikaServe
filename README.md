@@ -24,10 +24,16 @@ It can be currently queried at https://app.pokemon-api.xyz
 </div>
 
 ## API Usage
-Please visit the [Wiki](https://purukitto.github.io/pokemon-api/) for more information
+### Get started by getting a random Pokemon!
+Using the language / framework of your choice:
+- Load [https://app.pokemon-api.xyz/pokemon/random](https://app.pokemon-api.xyz/pokemon/random)
+- Parse the response body
+- Load it's the required parameters (e.g. `body.id` or `body.name.english`)
+
+Please visit the [Wiki](https://purukitto.github.io/pokemon-api/) for more information and different endpoints
 
 ## Why?
-There are hundred's of pokemon APIs already, with 20,000 ways to use and god knows how much incomprehensible data. This projects aim is to be as simple and straightforward to use as possible. Simple enough to be used, forked, edited and self-hosted as per personal preferences.
+There are hundred's of pokemon APIs already, with 20,000 ways to use and god knows how much incomprehensible data. This projects aim is to be as simple and straightforward to use as possible. We have a self collected, independent and unique database, which means we have complete control on every step on interaction. Simple enough to be used, forked, edited and self-hosted as per personal preferences, we are sure this API is for someone out there.
 
 <!-- if link  changes update on https://github.com/tobiasbueschel/awesome-pokemon -->
 
