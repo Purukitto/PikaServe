@@ -1,5 +1,6 @@
 <h1 align="center">pokemon-api</h1>
 
+## Development and hosting currently on hold
 
 <div align="center">
 
