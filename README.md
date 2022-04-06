@@ -5,7 +5,7 @@
 <div align="center">
 
 Pokemon-api is a simple to use, no bull-sh*t API endpoint to query data available in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
-It can be currently queried at https://app.pokemon-api.xyz
+It can be currently queried at https://api.pikaserve.xyz/
 
 <p align="center">  <a href="https://purukitto.github.io/pokemon-api/">
     <img alt="pokemon-API" src="wiki.png" width="728">
@@ -25,7 +25,7 @@ It can be currently queried at https://app.pokemon-api.xyz
 ## API Usage
 ### Get started by getting a random Pokemon!
 Using the language / framework of your choice:
-- Load [https://app.pokemon-api.xyz/pokemon/random](https://app.pokemon-api.xyz/pokemon/random)
+- Load [https://api.pikaserve.xyz/pokemon/random](https://api.pikaserve.xyz/pokemon/random)
 - Parse the response body
 - Load it's the required parameters (e.g. `body.id` or `body.name.english`)
 

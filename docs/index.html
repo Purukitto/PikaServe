@@ -115,7 +115,7 @@
                                                 <li><strong>Project Name : </strong>pokemon-api</li>
                                                 <li><strong>Project Version : </strong>v1.4.1</li>
                                                 <li><strong>Project URL : </strong> <a href="https://github.com/Purukitto/pokemon-api" target="_blank">https://github.com/Purukitto/pokemon-api</a></li>
-                                                <li><strong>Query Endpoint : </strong> <a href="https://app.pokemon-api.xyz/" target="_blank">app.pokemon-api.xyz/</a></li>
+                                                <li><strong>Query Endpoint : </strong> <a href="https://api.pikaserve.xyz/" target="_blank">https://api.pikaserve.xyz/</a></li>
                                                 <li><strong>Database URL : </strong> <a href="https://github.com/Purukitto/pokemon-data.json" target="_blank">https://github.com/Purukitto/pokemon-data.json</a></li>
                                                 <li><strong>Author  : </strong> <a href="https://github.com/Purukitto/" target="_blank">Pulkit Sambhavi Singh</a></li>
                                                 <li><strong>Issues/Bugs/Support : </strong> <a href="https://github.com/Purukitto/pokemon-api/issues" target="_blank">https://github.com/Purukitto/pokemon-api/issues</a></li>
@@ -183,14 +183,14 @@
                         <h4>Get a random Pokemon!</h4>
                         <p>Using the language / framework of your choice:
                             <ul class="bullet-list">
-                                <li>Load <a href="https://app.pokemon-api.xyz/pokemon/random">https://app.pokemon-api.xyz/pokemon/random</a></li>
+                                <li>Load <a href="https://api.pikaserve.xyz/pokemon/random">https://api.pikaserve.xyz/pokemon/random</a></li>
                                 <li>Parse the response body</li>
                                 <li>Load it's the required parameters (e.g. <code>body.id</code> or <code>body.name.english</code>)</li>
                             </ul>
                             Try it or some other stuff below:
                             <form id="poke-form">
                                 <div class="form-group form-input">
-                                    <label for="input" class="form-label">app.pokemon-api.xyz/</label>
+                                    <label for="input" class="form-label">api.pikaserve.xyz/</label>
                                     <input type="text" name="input" id="input" value="" required>
                                     <input type="submit" value="Fetch Data" class="submit" onclick="fetchAPI($('#input').val().toLowerCase().trim())" />
                                 </div>
@@ -218,22 +218,22 @@
                         <section id="line3_1" class="section">
                             <h4 class="dark-text"><code>/pokemon</code></h4>
                             <h4 class="mini-title"><code>/pokemon/all</code></h4>
-                            <p>Retrieves the complete pokemon database.<br>Request URL : <a href="https://app.pokemon-api.xyz/pokemon/all" target="blank_">https://app.pokemon-api.xyz/pokemon/all</a></p>
+                            <p>Retrieves the complete pokemon database.<br>Request URL : <a href="https://api.pikaserve.xyz/pokemon/all" target="blank_">https://api.pikaserve.xyz/pokemon/all</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="getpokemonall"></div></code></pre>
 
                             <h4 class="mini-title"><code>/pokemon/random</code></h4>
-                            <p>Retrives a random pokemon from the database.<br>Request URL : <a href="https://app.pokemon-api.xyz/pokemon/random" target="blank_">https://app.pokemon-api.xyz/pokemon/random</a></p>
+                            <p>Retrives a random pokemon from the database.<br>Request URL : <a href="https://api.pikaserve.xyz/pokemon/random" target="blank_">https://api.pikaserve.xyz/pokemon/random</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="getpokemonrand"></div></code></pre>
 
                             <h4 class="mini-title"><code>/pokemon/{name}</code></h4>
-                            <p>Searches the database and retrives pokemon named {name}.<br>Request URL : <a href="https://app.pokemon-api.xyz/pokemon/infernape" target="blank_">https://app.pokemon-api.xyz/pokemon/infernape</a></p>
+                            <p>Searches the database and retrives pokemon named {name}.<br>Request URL : <a href="https://api.pikaserve.xyz/pokemon/infernape" target="blank_">https://api.pikaserve.xyz/pokemon/infernape</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="getpokemonname"></div></code></pre>
 
                             <h4 class="mini-title"><code>/pokemon/{pokedexID}</code></h4>
-                            <p>Searches the database and retrives pokemon numbered {pokedexID}.<br>Request URL : <a href="https://app.pokemon-api.xyz/pokemon/696" target="blank_">https://app.pokemon-api.xyz/pokemon/696</a></p>
+                            <p>Searches the database and retrives pokemon numbered {pokedexID}.<br>Request URL : <a href="https://api.pikaserve.xyz/pokemon/696" target="blank_">https://api.pikaserve.xyz/pokemon/696</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="getpokemonid"></div></code></pre>
                             <hr>
@@ -241,22 +241,22 @@
                         <section id="line3_2" class="section">
                             <h4 class="dark-text"><code>/moves</code></h4>
                             <h4 class="mini-title"><code>/moves/all</code></h4>
-                            <p>Retrieves the complete moves database.<br>Request URL : <a href="https://app.pokemon-api.xyz/moves/all" target="blank_">https://app.pokemon-api.xyz/moves/all</a></p>
+                            <p>Retrieves the complete moves database.<br>Request URL : <a href="https://api.pikaserve.xyz/moves/all" target="blank_">https://api.pikaserve.xyz/moves/all</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="getmoveall"></div></code></pre>
 
                             <h4 class="mini-title"><code>/moves/random</code></h4>
-                            <p>Retrives a random move from the database.<br>Request URL : <a href="https://app.pokemon-api.xyz/moves/random" target="blank_">https://app.pokemon-api.xyz/moves/random</a></p>
+                            <p>Retrives a random move from the database.<br>Request URL : <a href="https://api.pikaserve.xyz/moves/random" target="blank_">https://api.pikaserve.xyz/moves/random</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="getmoverand"></div></code></pre>
 
                             <h4 class="mini-title"><code>/moves/{name}</code></h4>
-                            <p>Searches the database and retrives move named {name}.<br>Request URL : <a href="https://app.pokemon-api.xyz/moves/watershuriken" target="blank_">https://app.pokemon-api.xyz/moves/watershuriken</a></p>
+                            <p>Searches the database and retrives move named {name}.<br>Request URL : <a href="https://api.pikaserve.xyz/moves/watershuriken" target="blank_">https://api.pikaserve.xyz/moves/watershuriken</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="getmovename"></div></code></pre>
 
                             <h4 class="mini-title"><code>/moves/{movesID}</code></h4>
-                            <p>Searches the database and retrives move numbered {movesID}.<br>Request URL : <a href="https://app.pokemon-api.xyz/moves/500" target="blank_">https://app.pokemon-api.xyz/pokemon/500</a></p>
+                            <p>Searches the database and retrives move numbered {movesID}.<br>Request URL : <a href="https://api.pikaserve.xyz/moves/500" target="blank_">https://api.pikaserve.xyz/pokemon/500</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="getmoveid"></div></code></pre>
                             <hr>
@@ -264,22 +264,22 @@
                         <section id="line3_3" class="section">
                             <h4 class="dark-text"><code>/items</code></h4>
                             <h4 class="mini-title"><code>/items/all</code></h4>
-                            <p>Retrieves the complete items database.<br>Request URL : <a href="https://app.pokemon-api.xyz/items/all" target="blank_">https://app.pokemon-api.xyz/items/all</a></p>
+                            <p>Retrieves the complete items database.<br>Request URL : <a href="https://api.pikaserve.xyz/items/all" target="blank_">https://api.pikaserve.xyz/items/all</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="getitemall"></div></code></pre>
 
                             <h4 class="mini-title"><code>/items/random</code></h4>
-                            <p>Retrives a random item from the database.<br>Request URL : <a href="https://app.pokemon-api.xyz/items/random" target="blank_">https://app.pokemon-api.xyz/items/random</a></p>
+                            <p>Retrives a random item from the database.<br>Request URL : <a href="https://api.pikaserve.xyz/items/random" target="blank_">https://api.pikaserve.xyz/items/random</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="getitemrand"></div></code></pre>
 
                             <h4 class="mini-title"><code>/items/{name}</code></h4>
-                            <p>Searches the database and retrives item named {name}.<br>Request URL : <a href="https://app.pokemon-api.xyz/items/bicycle" target="blank_">https://app.pokemon-api.xyz/items/bicycle</a></p>
+                            <p>Searches the database and retrives item named {name}.<br>Request URL : <a href="https://api.pikaserve.xyz/items/bicycle" target="blank_">https://api.pikaserve.xyz/items/bicycle</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="getitemname"></div></code></pre>
 
                             <h4 class="mini-title"><code>/items/{itemsID}</code></h4>
-                            <p>Searches the database and retrives item numbered {itemsID}.<br>Request URL : <a href="https://app.pokemon-api.xyz/items/420" target="blank_">https://app.pokemon-api.xyz/items/420</a></p>
+                            <p>Searches the database and retrives item numbered {itemsID}.<br>Request URL : <a href="https://api.pikaserve.xyz/items/420" target="blank_">https://api.pikaserve.xyz/items/420</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="getitemid"></div></code></pre>
                             <hr>
@@ -287,22 +287,22 @@
                         <section id="line3_4" class="section">
                             <h4 class="dark-text"><code>/types</code></h4>
                             <h4 class="mini-title"><code>/types/all</code></h4>
-                            <p>Retrieves the complete types database.<br>Request URL : <a href="https://app.pokemon-api.xyz/types/all" target="blank_">https://app.pokemon-api.xyz/types/all</a></p>
+                            <p>Retrieves the complete types database.<br>Request URL : <a href="https://api.pikaserve.xyz/types/all" target="blank_">https://api.pikaserve.xyz/types/all</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="gettypeall"></div></code></pre>
 
                             <h4 class="mini-title"><code>/types/random</code></h4>
-                            <p>Retrives a random type from the database.<br>Request URL : <a href="https://app.pokemon-api.xyz/types/random" target="blank_">https://app.pokemon-api.xyz/types/random</a></p>
+                            <p>Retrives a random type from the database.<br>Request URL : <a href="https://api.pikaserve.xyz/types/random" target="blank_">https://api.pikaserve.xyz/types/random</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="gettyperand"></div></code></pre>
 
                             <h4 class="mini-title"><code>/types/{name}</code></h4>
-                            <p>Searches the database and retrives type named {name}.<br>Request URL : <a href="https://app.pokemon-api.xyz/types/fairy" target="blank_">https://app.pokemon-api.xyz/types/fairy</a></p>
+                            <p>Searches the database and retrives type named {name}.<br>Request URL : <a href="https://api.pikaserve.xyz/types/fairy" target="blank_">https://api.pikaserve.xyz/types/fairy</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="gettypename"></div></code></pre>
 
                             <h4 class="mini-title"><code>/types/{typesID}</code></h4>
-                            <p>Searches the database and retrives type numbered {typesID}.<br>Request URL : <a href="https://app.pokemon-api.xyz/types/15" target="blank_">https://app.pokemon-api.xyz/types/15</a></p>
+                            <p>Searches the database and retrives type numbered {typesID}.<br>Request URL : <a href="https://api.pikaserve.xyz/types/15" target="blank_">https://api.pikaserve.xyz/types/15</a></p>
                             <b>Output sample:</b>
                             <pre><code><div class="gettypeid"></div></code></pre>
                             <hr>
@@ -330,7 +330,7 @@
                                 <pre><code>
 const fetchUrl = require("fetch ").fetchUrl;
 
-const url = 'https://app.pokemon-api.xyz/pokemon/random';
+const url = 'https://api.pikaserve.xyz/pokemon/random';
 
 fetchUrl(url, function(error, meta, body) {
     if (!error) {
@@ -377,7 +377,7 @@ fetchUrl(url, function(error, meta, body) {
 import requests
 import json         # For formatting the output
 
-response = requests.get("https://app.pokemon-api.xyz/pokemon/random")
+response = requests.get("https://api.pikaserve.xyz/pokemon/random")
 
 # Do something with response data
 print(json.dumps(response.json(), sort_keys=True, indent=4))            #Or simply print(response.json())
