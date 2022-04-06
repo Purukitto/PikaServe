@@ -5,13 +5,13 @@
 PikaServe is a simple to use, no bull-sh*t API endpoint to query data available in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
 It can be currently queried at https://api.pikaserve.xyz/
 
-<p align="center">  <a href="https://purukitto.github.io/pokemon-api/">
+<p align="center">  <a href="https://purukitto.github.io/PikaServe/">
     <img alt="pokemon-API" src="wiki.png" width="728">
   </a>
 </p>
 
 
-[![Documentation](https://img.shields.io/badge/wiki-updated-green)](https://purukitto.github.io/pokemon-api/)
+[![Documentation](https://img.shields.io/badge/wiki-updated-green)](https://purukitto.github.io/PikaServe/)
 ![Development Stage](https://img.shields.io/badge/Version-v1.4.1-blue)
 
 [![Issues](https://img.shields.io/github/issues/Purukitto/PikaServe)](https://github.com/Purukitto/pokemon-api/issues)
@@ -26,7 +26,7 @@ Using the language / framework of your choice:
 - Parse the response body
 - Load it's the required parameters (e.g. `body.id` or `body.name.english`)
 
-Please visit the [Wiki](https://purukitto.github.io/pokemon-api/) for more information and different endpoints
+Please visit the [Wiki](https://purukitto.github.io/PikaServe/) for more information and different endpoints
 
 ## Why?
 There are hundred's of pokemon APIs already, with 20,000 ways to use and god knows how much incomprehensible data. This projects aim is to be as simple and straightforward to use as possible. We have a self collected, independent and unique database, which means we have complete control on every step on interaction. Simple enough to be used, forked, edited and self-hosted as per personal preferences, we are sure this API is for someone out there.
