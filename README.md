@@ -1,10 +1,8 @@
-<h1 align="center">pokemon-api</h1>
-
-## Development and hosting currently on hold
+<h1 align="center">PikaServe</h1>
 
 <div align="center">
 
-Pokemon-api is a simple to use, no bull-sh*t API endpoint to query data available in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
+PikaServe is a simple to use, no bull-sh*t API endpoint to query data available in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
 It can be currently queried at https://api.pikaserve.xyz/
 
 <p align="center">  <a href="https://purukitto.github.io/pokemon-api/">
