@@ -51,6 +51,7 @@ Why to self host?
 - You might want to add or modify some endpoints for your specific use case.
 - Biggest advantage will be low latency and you can freely remove the rate limits
 
+<!-- TODO: method for self hosting when cloning instead of drive -->
 ### Steps for self hosting
 - Download the release .rar from this [link](https://drive.google.com/drive/folders/1uoYEMtLcPNEq_rI7MsCsSzIpu9vO405F?usp=sharing)
 ##### Download the lastest release or any other specefic release (upwards of v1.1.2). See [Version History](/versionHistory.md) for changes.
