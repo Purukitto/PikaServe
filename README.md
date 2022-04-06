@@ -1,14 +1,13 @@
-<h1 align="center">PikaServe</h1>
+<p align="center">  <a href="https://purukitto.github.io/PikaServe/">
+    <img alt="PikaServe" src="logo.png" width="728">
+  </a>
+</p>
+
 
 <div align="center">
 
 PikaServe is a simple to use, no bull-sh*t API endpoint to query data available in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
 It can be currently queried at https://api.pikaserve.xyz/
-
-<p align="center">  <a href="https://purukitto.github.io/PikaServe/">
-    <img alt="pokemon-API" src="wiki.png" width="728">
-  </a>
-</p>
 
 
 [![Documentation](https://img.shields.io/badge/wiki-updated-green)](https://purukitto.github.io/PikaServe/)
