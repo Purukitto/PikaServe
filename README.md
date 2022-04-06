@@ -14,8 +14,8 @@ It can be currently queried at https://api.pikaserve.xyz/
 [![Documentation](https://img.shields.io/badge/wiki-updated-green)](https://purukitto.github.io/PikaServe/)
 ![Development Stage](https://img.shields.io/badge/Version-v1.4.1-blue)
 
-[![Issues](https://img.shields.io/github/issues/Purukitto/PikaServe)](https://github.com/Purukitto/pokemon-api/issues)
-[![License](https://img.shields.io/github/license/Purukitto/PikaServe)](https://github.com/Purukitto/pokemon-api/blob/master/LICENSE.md)
+[![Issues](https://img.shields.io/github/issues/Purukitto/PikaServe)](https://github.com/Purukitto/PikaServe/issues)
+[![License](https://img.shields.io/github/license/Purukitto/PikaServe)](https://github.com/Purukitto/PikaServe/blob/master/LICENSE.md)
 
 </div>
 
@@ -79,7 +79,7 @@ See [Contributing.md](/Contributing.md) for more details
 
 ## License
 
-[GNU GPLv3](https://github.com/Purukitto/pokemon-api/blob/master/LICENSE) © Pulkit Sambhavi Singh (https://github.com/Purukitto/)
+[GNU GPLv3](https://github.com/Purukitto/PikaServe/blob/master/LICENSE) © Pulkit Sambhavi Singh (https://github.com/Purukitto/)
 
 ##### This project was made for educational purposes, do consider supporting development by contributing or donating if you like the project
 
