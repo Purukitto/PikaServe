@@ -14,9 +14,8 @@ It can be currently queried at https://api.pikaserve.xyz/
 [![Documentation](https://img.shields.io/badge/wiki-updated-green)](https://purukitto.github.io/pokemon-api/)
 ![Development Stage](https://img.shields.io/badge/Version-v1.4.1-blue)
 
-[![Issuies](https://img.shields.io/github/issues/Purukitto/pokemon-api)](https://github.com/Purukitto/pokemon-api/issues)
-[![Known Vulnerabilities](https://snyk.io/test/github/Purukitto/pokemon-api/badge.svg)](https://snyk.io/test/github/Purukitto/pokemon-api)
-[![License](https://img.shields.io/github/license/Purukitto/pokemon-api)](https://github.com/Purukitto/pokemon-api/blob/master/LICENSE.md)
+[![Issues](https://img.shields.io/github/issues/Purukitto/PikaServe)](https://github.com/Purukitto/pokemon-api/issues)
+[![License](https://img.shields.io/github/license/Purukitto/PikaServe)](https://github.com/Purukitto/pokemon-api/blob/master/LICENSE.md)
 
 </div>
 
