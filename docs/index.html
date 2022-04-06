@@ -14,7 +14,7 @@
     <meta name="author" content="">
     <meta name="keywords" content="">
 
-    <title>pokemon-api | Developer Documentation</title>
+    <title>PikaServe (pokemon-api) | Developer Documentation</title>
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
@@ -64,8 +64,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="big-title text-center">
-                            <h1>Pokemon-API Wiki</h1>
-                            <p class="lead">pokemon-api 1.4.1</p>
+                            <h1>PikaServe Wiki</h1>
+                            <p class="lead">PikaServe (pokemon-api) 2.0.0</p>
                         </div>
                         <!-- end title -->
                     </div>
@@ -112,8 +112,8 @@
                                     <div class="col-md-12 full">
                                         <div class="intro1">
                                             <ul>
-                                                <li><strong>Project Name : </strong>pokemon-api</li>
-                                                <li><strong>Project Version : </strong>v1.4.1</li>
+                                                <li><strong>Project Name : </strong> PikaServe (pokemon-api)</li>
+                                                <li><strong>Project Version : </strong>v2.0.0</li>
                                                 <li><strong>Project URL : </strong> <a href="https://github.com/Purukitto/pokemon-api" target="_blank">https://github.com/Purukitto/pokemon-api</a></li>
                                                 <li><strong>Query Endpoint : </strong> <a href="https://api.pikaserve.xyz/" target="_blank">https://api.pikaserve.xyz/</a></li>
                                                 <li><strong>Database URL : </strong> <a href="https://github.com/Purukitto/pokemon-data.json" target="_blank">https://github.com/Purukitto/pokemon-data.json</a></li>
@@ -326,7 +326,7 @@
                                 <li><strong>Install <code>fetch</code> using npm (or yarn)</strong></li>
                                 <pre><code>npm i fetch</code></pre> or
                                 <pre><code>yarn add node-fetch</code></pre>
-                                <li><strong>Create a file <code>pokemon-api.js</code></strong></li>
+                                <li><strong>Create a file <code>PikaServe.js</code></strong></li>
                                 <pre><code>
 const fetchUrl = require("fetch ").fetchUrl;
 
@@ -342,7 +342,7 @@ fetchUrl(url, function(error, meta, body) {
 });
                                 </code></pre>
                                 <li><strong>Run the file using the following code (in the terminal)</strong></li>
-                                <pre><code>node pokemon-api.js</code></pre>
+                                <pre><code>node PikaServe.js</code></pre>
                                 <li><strong>You will see the following output in the terminal in this case</strong></li>
                                 <pre><code>
 // Sample Output
@@ -372,7 +372,7 @@ fetchUrl(url, function(error, meta, body) {
                             <ul class="bullet-list">
                                 <li><strong>Install <code>requests</code> using pip or any other package manager</strong></li>
                                 <pre><code>pip install requests</code></pre>
-                                <li><strong>Create a file <code>pokemon-api.py</code></strong></li>
+                                <li><strong>Create a file <code>PikaServe.py</code></strong></li>
                                 <pre><code class="py">
 import requests
 import json         # For formatting the output
@@ -383,7 +383,7 @@ response = requests.get("https://api.pikaserve.xyz/pokemon/random")
 print(json.dumps(response.json(), sort_keys=True, indent=4))            #Or simply print(response.json())
                                 </code></pre>
                                 <li><strong>Run the file in your IDE or by running the following code</strong></li>
-                                <pre><code>python -u "{pathToFile}\pokemon-api.py"</code></pre>
+                                <pre><code>python -u "{pathToFile}\PikaServe.py"</code></pre>
                                 <li><strong>You will see the following output in this case</strong></li>
                                 <pre><code>
 {
