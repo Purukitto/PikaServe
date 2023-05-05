@@ -7,7 +7,8 @@
 <div align="center">
 
 PikaServe is a simple to use, no bull-sh*t API endpoint to query data available in [pokedex-data.json](https://github.com/Purukitto/pokemon-data.json) <br>
-It can be currently queried at https://api.pikaserve.xyz/
+~It can be currently queried at https://api.pikaserve.xyz/~ **Server down until further notice**
+#### Use self hosting guide (below) to continue using the endpoints
 
 
 [![Documentation](https://img.shields.io/badge/wiki-updated-green)](https://purukitto.github.io/PikaServe/)
