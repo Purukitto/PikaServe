@@ -96,15 +96,18 @@ $(document).ready(function() {
     var b4 = document.getElementsByClassName("getmoveid");
 
     $(b1).append(JSON.stringify([{
-        "accuracy": 100,
-        "category": "物理",
-        "cname": "拍击",
-        "ename": "Pound",
-        "id": 1,
-        "jname": "はたく",
-        "power": 40,
-        "pp": 35,
-        "type": "Normal"
+        "id": "1",
+        "name": {
+            "english": "Pound",
+            "japanese": "はたく",
+            "french": "Écras'Face",
+            "chinese": "拍击"
+        },
+        "type": "Normal",
+        "category": "Physical",
+        "pp": "35",
+        "power": "40",
+        "accuracy": "100"
     }, {
         "object with id": 2
     }, {
@@ -112,39 +115,48 @@ $(document).ready(function() {
     }], null, 4));
 
     $(b2).append(JSON.stringify({
-        "accuracy": 30,
-        "category": "特殊",
-        "cname": "绝对零度",
-        "ename": "Sheer Cold",
-        "id": 329,
-        "jname": "ぜったいれいど",
-        "power": null,
-        "pp": 5,
-        "type": "Ice"
+        "id": "329",
+        "name": {
+            "english": "Sheer Cold",
+            "japanese": "ぜったいれいど",
+            "french": "Glaciation",
+            "chinese": "绝对零度"
+        },
+        "type": "Ice",
+        "category": "Special",
+        "pp": "5",
+        "power": "???",
+        "accuracy": "30"
     }, null, 4));
 
     $(b3).append(JSON.stringify({
-        "accuracy": 100,
-        "category": "物理",
-        "cname": "水之手里剑",
-        "ename": "Water Shuriken",
-        "id": 594,
-        "jname": "みずしゅりけん",
-        "power": 15,
-        "pp": 20,
-        "type": "Water"
+        "id": "594",
+        "name": {
+            "english": "Water Shuriken",
+            "japanese": "みずしゅりけん",
+            "french": "Shuriken d'Eau",
+            "chinese": "水之手里剑"
+        },
+        "type": "Water",
+        "category": "Physical",
+        "pp": "20",
+        "power": "15",
+        "accuracy": "100"
     }, null, 4));
 
     $(b4).append(JSON.stringify({
-        "accuracy": 100,
-        "category": "特殊",
-        "cname": "协助力量",
-        "ename": "Stored Power",
-        "id": 500,
-        "jname": "アシストパワー",
-        "power": 20,
-        "pp": 10,
-        "type": "Psychic"
+        "id": "500",
+        "name": {
+            "english": "Stored Power",
+            "japanese": "アシストパワー",
+            "french": "Force Ajoutée",
+            "chinese": "协助力量"
+        },
+        "type": "Psychic",
+        "category": "Special",
+        "pp": "10",
+        "power": "20",
+        "accuracy": "100"
     }, null, 4));
 
     // ITEMS
